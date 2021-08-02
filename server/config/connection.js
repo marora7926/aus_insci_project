@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 require ('dotenv').config()
 
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/googlebooks', 
+  process.env.MONGODB_URI || 'mongodb://localhost/ausinsci', 
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,

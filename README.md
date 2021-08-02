@@ -30,7 +30,7 @@
 
 ## <span style="color:lightgreen">Access deployed and repo link</span>
 
-- [🎥 Aus-InSCI Project Website  🎥](XXX)
+- [🎥 Aus-InSCI Project Website  🎥](https://aus-insci-project.herokuapp.com/)
 - [👋 Aus-InSCI Project Repo 👋](https://github.com/marora7926/aus_insci_project)
 
 Developed by [Mohit Arora](https://github.com/marora7926)

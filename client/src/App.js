@@ -48,11 +48,11 @@ function App() {
           <Navbar />
           <Switch>
             <Route exact path='/' component={AboutAusInsci} />
-            <Route exact path='/search' component={SearchBooks} />
-            <Route exact path='/saved' component={SavedBooks} />
-            <Route exact path='/involved' component={GetInvolved} />
             <Route exact path='/partners' component={Partners} />
             <Route exact path='/results' component={Results} />
+            <Route exact path='/involved' component={GetInvolved} />
+            <Route exact path='/search' component={SearchBooks} />
+            <Route exact path='/saved' component={SavedBooks} />
             <Route render={() => <h1 className='display-2'>Wrong page!</h1>} />
           </Switch>
         </>

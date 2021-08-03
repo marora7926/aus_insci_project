@@ -6,6 +6,25 @@ import LoginForm from './LoginForm';
 
 import Auth from '../utils/auth';
 
+const styles = {
+  marquee: {
+      width: '100%',
+      direction: 'left',
+      height: '40px',
+      backgroundColor: 'Warning',
+  },
+  marqueeText: {
+      display: 'inline-flex',
+      paddingLeft: '0px !important',
+  },
+  text1: {
+    marginLeft: '120px',
+    padding: '8px',
+    listStyleType: 'none',
+    font: '30px',
+  }
+};
+
 const AppNavbar = () => {
   // set modal display state
   const [showModal, setShowModal] = useState(false);
@@ -82,6 +101,12 @@ const AppNavbar = () => {
           </Modal.Body>
         </Tab.Container>
       </Modal>
+      <marquee style={styles.marquee}>
+        <ul style={styles.marqueeText}>
+          <li style={styles.text1}>The next Aus-InSCI Survey will be rolled out in January 2023</li>
+          <li style={styles.text1}>New: Lay summary for the employment paper has been added</li>
+        </ul>
+      </marquee>
     </>
   );
 };

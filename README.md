@@ -126,7 +126,7 @@ WHEN I choose to delete an existing item THEN the password item is removed from 
   8. URL click will direct to the website and auto-fill username and password.
 
 ## <span style="color:lightgreen">Presentation link</span>
-[👋 Aus-InSCI Project Presentation 👋](https://cloudstor.aarnet.edu.au/plus/s/kbKe2OGZ0js3jDp)
+[👋 Aus-InSCI Project Presentation 👋](https://cloudstor.aarnet.edu.au/plus/s/xxx)
 
 ## <span style="color:lightgreen">Wireframe</span>
 ![Screenshot-wireframe](./public/images/wireframe.png)

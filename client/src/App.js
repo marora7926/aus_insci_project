@@ -10,6 +10,10 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
+import AboutAusInsci from './pages/AboutAusInsci';
+import GetInvolved from './pages/GetInvolved';
+import Partners from './pages/Partners';
+import Results from './pages/Results';
 import Navbar from './components/Navbar';
 
 // Construct our main GraphQL API endpoint
@@ -43,8 +47,12 @@ function App() {
         <>
           <Navbar />
           <Switch>
-            <Route exact path='/' component={SearchBooks} />
+            <Route exact path='/' component={AboutAusInsci} />
+            <Route exact path='/search' component={SearchBooks} />
             <Route exact path='/saved' component={SavedBooks} />
+            <Route exact path='/involved' component={GetInvolved} />
+            <Route exact path='/partners' component={Partners} />
+            <Route exact path='/results' component={Results} />
             <Route render={() => <h1 className='display-2'>Wrong page!</h1>} />
           </Switch>
         </>

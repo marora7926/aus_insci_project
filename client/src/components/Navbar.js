@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, Container, Modal, Tab } from 'react-bootstrap';
+import Marquee from "react-fast-marquee";
+
 import SignUpForm from './RegistrationForm';
 import LoginForm from './LoginForm';
 
@@ -8,7 +10,7 @@ import Auth from '../utils/auth';
 
 const styles = {
   marquee: {
-      width: '100%',
+      width: '100% !important',
       direction: 'left',
       height: '40px',
       backgroundColor: 'Warning',
@@ -88,13 +90,13 @@ const AppNavbar = () => {
           </Modal.Body>
         </Tab.Container>
       </Modal>
-      <marquee style={styles.marquee}>
+      <Marquee style={styles.marquee}>
         <ul style={styles.marqueeText}>
           <li style={styles.text1}>The next Aus-InSCI Survey will be rolled out in January 2023</li>
           <li style={styles.text1}>For viewing Australian results in details, please Login or Register</li>
           <li style={styles.text1}>New: Lay summary for the employment paper has been added</li>
         </ul>
-      </marquee>
+      </Marquee>
     </>
   );
 };

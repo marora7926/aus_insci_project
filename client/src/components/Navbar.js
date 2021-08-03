@@ -42,6 +42,7 @@ const AppNavbar = () => {
               <Nav.Link as={Link} to='/results'>Results</Nav.Link>
               <Nav.Link as={Link} to='/involved'>Get Involved</Nav.Link>
               <Nav.Link as={Link} to='/search'>Search Literature</Nav.Link>
+              {/* <Nav.Link as={Link} to='/htmldata'>Australian Data</Nav.Link> */}
               {/* if user is logged in show saved books and logout */}
               {Auth.loggedIn() ? (
                 <>
@@ -90,6 +91,7 @@ const AppNavbar = () => {
       <marquee style={styles.marquee}>
         <ul style={styles.marqueeText}>
           <li style={styles.text1}>The next Aus-InSCI Survey will be rolled out in January 2023</li>
+          <li style={styles.text1}>For viewing Australian results in details, please Login or Register</li>
           <li style={styles.text1}>New: Lay summary for the employment paper has been added</li>
         </ul>
       </marquee>

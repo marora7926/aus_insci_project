@@ -1,5 +1,5 @@
 import React from 'react';
-import { Jumbotron, Container, Navbar, Nav } from 'react-bootstrap';
+import { Container, Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -7,15 +7,10 @@ import AusInsci2018 from './about-subpages/AusInsci2018';
 import AusInsci2023 from './about-subpages/AusInsci2023'
 import Translation from './about-subpages/Translation';
 
-const AboutAusInsci = () => {
+function AboutAusInsci ({ currentPage, handlePageChange }) {
     return (
         <Router>
         <>
-            {/* <Jumbotron fluid className='text-light bg-dark'>
-                <Container>
-                    <h1>About Aus-InSCI Project</h1>
-                </Container>
-            </Jumbotron> */}
             <Navbar className='text-light bg-secondary' variant='dark' expand='lg'>
                 <Container fluid>
                     <Navbar.Toggle aria-controls='navbar' />

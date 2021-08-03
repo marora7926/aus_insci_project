@@ -18,7 +18,7 @@ const Results = () => {
             <Nav>
                 <Nav.Link as={Link} to='/report'>National Report</Nav.Link>
                 <Nav.Link as={Link} to='/plain'>Plain language documents</Nav.Link>
-                <Nav.Link as={Link} to='/science'>Scientific publications</Nav.Link>
+                <Nav.Link as={Link} to='/publications'>Scientific publications</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

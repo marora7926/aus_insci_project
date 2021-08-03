@@ -3,9 +3,9 @@ import { Jumbotron, Container, Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import AusInsci2018 from '../pages/about-subpages/AusInsci2018';
-import AusInsci2023 from '../pages/about-subpages/AusInsci2023'
-import Translation from '../pages/about-subpages/Translation';
+import AusInsci2018 from './about-subpages/AusInsci2018';
+import AusInsci2023 from './about-subpages/AusInsci2023'
+import Translation from './about-subpages/Translation';
 
 const AboutAusInsci = () => {
     return (

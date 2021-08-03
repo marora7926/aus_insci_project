@@ -29,6 +29,7 @@ const AboutAusInsci = () => {
                 </Container>
             </Navbar>
             <Switch>
+                <Route exact path='/' component={AusInsci2018} />
                 <Route exact path='/ausinsci2018' component={AusInsci2018} />
                 <Route exact path='/ausinsci2023' component={AusInsci2023} />
                 <Route exact path='/translation' component={Translation} />

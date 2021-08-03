@@ -30,10 +30,10 @@ const Partners = () => {
                     </Container>
                 </Navbar>
                 <Switch>
+                    <Route exact path='/' component={Researchers} />
                     <Route exact path='/researchers' component={Researchers} />
                     <Route exact path='/advisory' component={Advisory} />
                     <Route exact path='/organisations' component={Organisations} />
-                    <Route render={() => <h1 className='display-2'>Wrong page!</h1>} />
                 </Switch>
             </>
         </Router>

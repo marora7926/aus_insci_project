@@ -33,33 +33,19 @@ const AppNavbar = () => {
     <>
       <Navbar bg='dark' variant='dark' expand='lg'>
         <Container fluid>
-          <Navbar.Brand as={Link} to='/'>
-            Aus-InSCI Project
-          </Navbar.Brand>
+          <Navbar.Brand as={Link} to='/'>Aus-InSCI Project</Navbar.Brand>
           <Navbar.Toggle aria-controls='navbar' />
           <Navbar.Collapse id='navbar'>
             <Nav className='ml-auto'>
-            <Nav.Link as={Link} to='/'>
-                About Aus-InSCI
-              </Nav.Link>
-              <Nav.Link as={Link} to='/partners'>
-                Research Partners
-              </Nav.Link>
-              <Nav.Link as={Link} to='/results'>
-                Results
-              </Nav.Link>
-              <Nav.Link as={Link} to='/involved'>
-                Get Involved
-              </Nav.Link>
-              <Nav.Link as={Link} to='/search'>
-                Search Literature
-              </Nav.Link>
+            <Nav.Link as={Link} to='/'>About Aus-InSCI</Nav.Link>
+              <Nav.Link as={Link} to='/partners'>Research Partners</Nav.Link>
+              <Nav.Link as={Link} to='/results'>Results</Nav.Link>
+              <Nav.Link as={Link} to='/involved'>Get Involved</Nav.Link>
+              <Nav.Link as={Link} to='/search'>Search Literature</Nav.Link>
               {/* if user is logged in show saved books and logout */}
               {Auth.loggedIn() ? (
                 <>
-                  <Nav.Link as={Link} to='/saved'>
-                    Saved documents
-                  </Nav.Link>
+                  <Nav.Link as={Link} to='/saved'>Saved documents</Nav.Link>
                   <Nav.Link onClick={Auth.logout}>Logout</Nav.Link>
                 </>
               ) : (

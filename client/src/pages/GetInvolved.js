@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Participate from './involved-subpages/Participate';
-import Ideas from './involved-subpages/Ideas'
-import Contact from './involved-subpages/Contact';
+import Subscribe from './involved-subpages/Subscribe';
+import Feedback from './involved-subpages/Feedback'
+import Enquiry from './involved-subpages/Enquiry';
 
 const GetInvolved = () => {
     return (
@@ -17,18 +17,17 @@ const GetInvolved = () => {
                         <Navbar.Toggle aria-controls='navbar' />
                         <Navbar.Collapse id='navbar'>
                             <Nav>
-                                <Nav.Link as={Link} to='/participate'>Want to participate?</Nav.Link>
-                                <Nav.Link as={Link} to='/ideas'>Share your ideas</Nav.Link>
-                                <Nav.Link as={Link} to='/contact'>Contact us</Nav.Link>
+                                <Nav.Link as={Link} to='/subscribe'>Subscribe</Nav.Link>
+                                <Nav.Link as={Link} to='/feedback'>Feedback Form</Nav.Link>
+                                <Nav.Link as={Link} to='/enquiry'>Enquiry Form</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
                 <Switch>
-                    <Route exact path='/' component={Participate} />
-                    <Route exact path='/participate' component={Participate} />
-                    <Route exact path='/ideas' component={Ideas} />
-                    <Route exact path='/contact' component={Contact} />
+                    <Route exact path='/subscribe' component={Subscribe} />
+                    <Route exact path='/feedback' component={Feedback} />
+                    <Route exact path='/enquiry' component={Enquiry} />
                 </Switch>
             </>
         </Router>

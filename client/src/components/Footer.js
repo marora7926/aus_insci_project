@@ -15,8 +15,9 @@ function Footer() {
             </p>
       </div>
       <div className="flex-container links">
-              <p>© 2021 Mohit Arora | ABN: 00 000 000 000</p>
+              <p>© 2021 Mohit Arora</p>
               <p>
+              <a href={Privacy}>Contact us</a>
                 <a href={Privacy} download="Privacy">Privacy</a>
                 <a href={Disclaimer} download="Disclaimer">Disclaimer</a>
               </p>

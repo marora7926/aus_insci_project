@@ -1,32 +1,109 @@
-import React from 'react';
+import React from "react";
+import { Card } from 'react-bootstrap';
+// import Card from "@material-ui/core/Card";
+// import CardContent from "@material-ui/core/CardContent";
+// import Typography from "@material-ui/core/Typography";
+// import Button from "@material-ui/core/Button";
+// import CardActions from "@material-ui/core/CardActions";
 
-const Researchers = () => {
-    return (
-        <>
-            <div>
-                <h1>Research Team</h1>
-                <div class="c-about-employee">
-                    <div class="image">
-                        <img
-                            class="e-image lazy entered loaded" 
-                            data-src="/media/images/Site_Brett_MGnHJm2.original.jpg" 
-                            data-srcset="/media/images/Site_Brett_MGnHJm2.width-400.jpg 400w, 
-                            /media/images/Site_Brett_MGnHJm2.width-800.jpg 800w, 
-                            /media/images/Site_Brett_MGnHJm2.original.jpg 1200w" 
-                            alt="Site_Brett.jpg" 
-                            data-ll-status="loaded" 
-                            srcset="/media/images/Site_Brett_MGnHJm2.width-400.jpg 400w, 
-                            /media/images/Site_Brett_MGnHJm2.width-800.jpg 800w, 
-                            /media/images/Site_Brett_MGnHJm2.original.jpg 1200w" 
-                            src="/media/images/Site_Brett_MGnHJm2.original.jpg">
-                        </img>
-                        <div class="name">Brett Mitchell</div>
-                        <div class="title">Director</div>
-                    </div>
-                </div>
-            </div>
-        </>
-    );
-};
+export default function Researchers() {
+return (
+<>
+  <Card border="primary" style={{ width: '18rem' }}>
+    <Card.Header>Header</Card.Header>
+    <Card.Body>
+      <Card.Title>Primary Card Title</Card.Title>
+      <Card.Text>
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </Card.Text>
+    </Card.Body>
+  </Card>
+  <br />
 
-export default Researchers;
+  <Card border="secondary" style={{ width: '18rem' }}>
+    <Card.Header>Header</Card.Header>
+    <Card.Body>
+      <Card.Title>Secondary Card Title</Card.Title>
+      <Card.Text>
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </Card.Text>
+    </Card.Body>
+  </Card>
+  <br />
+
+  <Card border="success" style={{ width: '18rem' }}>
+    <Card.Header>Header</Card.Header>
+    <Card.Body>
+      <Card.Title>Success Card Title</Card.Title>
+      <Card.Text>
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </Card.Text>
+    </Card.Body>
+  </Card>
+  <br />
+
+  <Card border="danger" style={{ width: '18rem' }}>
+    <Card.Header>Header</Card.Header>
+    <Card.Body>
+      <Card.Title>Danger Card Title</Card.Title>
+      <Card.Text>
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </Card.Text>
+    </Card.Body>
+  </Card>
+  <br />
+
+  <Card border="warning" style={{ width: '18rem' }}>
+    <Card.Header>Header</Card.Header>
+    <Card.Body>
+      <Card.Title>Warning Card Title</Card.Title>
+      <Card.Text>
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </Card.Text>
+    </Card.Body>
+  </Card>
+  <br />
+
+  <Card border="info" style={{ width: '18rem' }}>
+    <Card.Header>Header</Card.Header>
+    <Card.Body>
+      <Card.Title>Info Card Title</Card.Title>
+      <Card.Text>
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </Card.Text>
+    </Card.Body>
+  </Card>
+  <br />
+
+  <Card border="dark" style={{ width: '18rem' }}>
+    <Card.Header>Header</Card.Header>
+    <Card.Body>
+      <Card.Title>Dark Card Title</Card.Title>
+      <Card.Text>
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </Card.Text>
+    </Card.Body>
+  </Card>
+  <br />
+
+  <Card border="light" style={{ width: '18rem' }}>
+    <Card.Header>Header</Card.Header>
+    <Card.Body>
+      <Card.Title>Light Card Title</Card.Title>
+      <Card.Text>
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </Card.Text>
+    </Card.Body>
+  </Card>
+  <br />
+</>
+);
+}

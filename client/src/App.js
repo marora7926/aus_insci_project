@@ -8,6 +8,7 @@ import {
 import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
+import Header from './components/Header';
 import Navbar from './components/Navbar';
 import AboutAusInsci from './pages/AboutAusInsci';
 import Partners from './pages/Partners';
@@ -47,6 +48,7 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <>
+          <Header />
           <Navbar />
           <Switch>
             <Route exact path='/' component={AboutAusInsci} />

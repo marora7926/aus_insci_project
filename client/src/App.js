@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import AboutAusInsci from './pages/AboutAusInsci';
+// import AusInsci2018 from './pages/about-subpages/AusInsci2018';
 import Partners from './pages/Partners';
 import Results from './pages/Results';
 import GetInvolved from './pages/GetInvolved';
@@ -51,6 +52,7 @@ function App() {
           <Header />
           <Navbar />
           <Switch>
+            {/* <Route exact path='/' component={AusInsci2018} /> */}
             <Route exact path='/' component={AboutAusInsci} />
             <Route exact path='/partners' component={Partners} />
             <Route exact path='/results' component={Results} />

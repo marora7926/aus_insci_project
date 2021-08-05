@@ -49,7 +49,7 @@ const AppNavbar = () => {
       </Marquee>
       <Navbar bg='dark' variant='dark' expand='lg'>
         <Container fluid>
-          {/* <Navbar.Brand as={Link} to='/'>Aus-InSCI Project</Navbar.Brand> */}
+          <Navbar.Brand as={Link} to='/'>Aus-InSCI Project</Navbar.Brand>
           <Navbar.Toggle aria-controls='navbar' />
           <Navbar.Collapse id='navbar'>
             <Nav className='ml-auto'>

@@ -13,15 +13,21 @@ const styles = {
       width: '100% !important',
       direction: 'left',
       height: '40px',
-      backgroundColor: 'Warning',
+      backgroundColor: 'Warning !important',
   },
+
   marqueeText: {
       display: 'inline-flex',
-      paddingLeft: '0px !important',
+      paddingBottom: '0px !important',
   },
+
+  ul: {
+    paddingBottom: '0px',
+  },
+  
   text1: {
     marginLeft: '120px',
-    padding: '8px',
+    // padding: '8px',
     listStyleType: 'none',
     font: '30px',
   }
@@ -33,9 +39,17 @@ const AppNavbar = () => {
 
   return (
     <>
+      {/* <hr></hr> */}
+      <Marquee style={styles.marquee}>
+        <ul style={styles.marqueeText}>
+          <li style={styles.text1}>The next Aus-InSCI Survey will be rolled out in January 2023</li>
+          <li style={styles.text1}>For viewing Australian results in details, please Login or Register</li>
+          <li style={styles.text1}>New: Lay summary for the employment paper has been added</li>
+        </ul>
+      </Marquee>
       <Navbar bg='dark' variant='dark' expand='lg'>
         <Container fluid>
-          <Navbar.Brand as={Link} to='/'>Aus-InSCI Project</Navbar.Brand>
+          {/* <Navbar.Brand as={Link} to='/'>Aus-InSCI Project</Navbar.Brand> */}
           <Navbar.Toggle aria-controls='navbar' />
           <Navbar.Collapse id='navbar'>
             <Nav className='ml-auto'>
@@ -90,13 +104,6 @@ const AppNavbar = () => {
           </Modal.Body>
         </Tab.Container>
       </Modal>
-      <Marquee style={styles.marquee}>
-        <ul style={styles.marqueeText}>
-          <li style={styles.text1}>The next Aus-InSCI Survey will be rolled out in January 2023</li>
-          <li style={styles.text1}>For viewing Australian results in details, please Login or Register</li>
-          <li style={styles.text1}>New: Lay summary for the employment paper has been added</li>
-        </ul>
-      </Marquee>
     </>
   );
 };

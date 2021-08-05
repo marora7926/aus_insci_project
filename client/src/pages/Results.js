@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Report from './results-subpages/Report';
-import Plain from './results-subpages/Plain'
+import Plain from './results-subpages/Plain';
 import Publications from './results-subpages/Publications';
 
 const Results = () => {

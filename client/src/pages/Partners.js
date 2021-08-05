@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Researchers from './partners-subpages/Researchers';
-import Advisory from './partners-subpages/advisory';
+import Advisory from './partners-subpages/Advisory';
 import Organisations from './partners-subpages/Organisations';
 
 const Partners = () => {

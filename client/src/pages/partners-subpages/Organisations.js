@@ -82,7 +82,7 @@ const Organisations = ({ size }) => {
         <hr></hr>    
         <div style={{ height: scale * 100 }}>
             <Marquee key={key} velocity={25}>
-            {times(7, Number).map((id) => (
+            {times(6, Number).map((id) => (
                 <Photo src={photos[id]} alt="" key={`marquee-example-logo-${id}`} scale={scale} />
             ))}
             </Marquee>
@@ -92,17 +92,34 @@ const Organisations = ({ size }) => {
 
         <div style={{ height: scale * 100 }}>
             <Marquee key={key} velocity={25}>
-            {times(7, Number).map((id) => (
+            {times(5, Number).map((id) => (
                 <Photo
-                src={photos[id + 7]}
+                src={photos[id + 6]}
                 alt=""
-                key={`marquee-example-logo-${id + 7}`}
+                key={`marquee-example-logo-${id + 6}`}
                 offset="true"
                 scale={scale}
                 />
             ))}
             </Marquee>
         </div>
+
+        <div style={{ height: scale * 40 }} />
+
+        <div style={{ height: scale * 100 }}>
+            <Marquee key={key} velocity={25}>
+            {times(5, Number).map((id) => (
+                <Photo
+                src={photos[id + 6]}
+                alt=""
+                key={`marquee-example-logo-${id + 6}`}
+                offset="true"
+                scale={scale}
+                />
+            ))}
+            </Marquee>
+        </div>
+
         </FullWidth>
     </>
   );

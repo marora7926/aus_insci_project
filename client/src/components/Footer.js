@@ -14,13 +14,13 @@ const styles = {
   },
   p: {
     marginTop: '15px',
-    fontSize: '15px',
+    fontSize: '14px',
     alignTtems: 'center',
     color: '#03045e',
   },
   a: {
     padding: '0 12px',
-    fontSize: '15px',
+    fontSize: '14px',
     color: '#03045e',
   },
   flexContainer: {

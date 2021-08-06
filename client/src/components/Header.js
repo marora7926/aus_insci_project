@@ -18,13 +18,13 @@ const styles = {
   h2: {
     paddingTop: '15px',
     marginRight: '15px',
-    marginLeft: '40px',
+    marginLeft: '20px',
     textAlign: 'left',
     fontSize: '2.0rem',
     color: '#03045e',
   },
   h5: {
-    marginLeft: '40px',
+    marginLeft: '20px',
     fontStyle: 'italic',
     color: '#03045e',
   },

@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Prof Tim Geraghty",
+        "role": "Principal Investigator",
+        "representation": "QLD Site"
+    },
+    {
+        "id": 2,
+        "name": "Prof James Middleton",
+        "role": "Chief Investigator - Australia",
+        "representation": "Central Site"
+    },
+    {
+        "id": 3,
+        "name": "Dr Delena Amsters",
+        "role": "Project Lead and Adjunct Research Fellow",
+        "representation": "Central Site"
+    },
+    {
+        "id": 4,
+        "name": "Dr Mohit Arora",
+        "role": "Postdoctoral Fellow",
+        "representation": "Central Site"
+    },
+    {
+        "id": 5,
+        "name": "Ms Samantha Borg",
+        "role": "Site Coordinator",
+        "representation": "QLD Site"
+    }
+]  

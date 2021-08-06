@@ -7,18 +7,28 @@ import AusInsci2018 from './about-subpages/AusInsci2018';
 import AusInsci2023 from './about-subpages/AusInsci2023'
 import Translation from './about-subpages/Translation';
 
-function AboutAusInsci ({ currentPage, handlePageChange }) {
+const styles = {
+    navbar: {
+      height: '40px',
+      backgroundColor: '#cdb4db',
+    },
+    navLink: {
+      color: 'purple',
+    },
+};
+
+function AboutAusInsci () {
     return (
         <Router>
         <>
-            <Navbar className='text-light bg-secondary' variant='dark' expand='lg'>
+            <Navbar style={styles.navbar} expand='lg'>
                 <Container fluid>
                     <Navbar.Toggle aria-controls='navbar' />
                     <Navbar.Collapse id='navbar'>
                         <Nav>
-                            <Nav.Link as={Link} to='/ausinsci2018'>Aus-InSCI 2018</Nav.Link>
-                            <Nav.Link as={Link} to='/ausinsci2023'>Aus-InSCI 2023</Nav.Link>
-                            <Nav.Link as={Link} to='/translation'>Aus-InSCI Translation Project</Nav.Link>
+                            <Nav.Link as={Link} to='/ausinsci2018' style={styles.navLink}>Aus-InSCI 2018</Nav.Link>
+                            <Nav.Link as={Link} to='/ausinsci2023' style={styles.navLink}>Aus-InSCI 2023</Nav.Link>
+                            <Nav.Link as={Link} to='/translation' style={styles.navLink}>Translation Project</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

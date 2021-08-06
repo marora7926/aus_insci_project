@@ -3,7 +3,7 @@ import React from 'react';
 const Advisory = () => {
     return (
         <>
-        <h1>Advisory Committee page</h1>
+        <h1>Plain Language Summary page</h1>
         </>
     );
 };

@@ -8,18 +8,28 @@ import Researchers from './partners-subpages/Researchers';
 import Advisory from './partners-subpages/Advisory';
 import Organisations from './partners-subpages/Organisations';
 
+const styles = {
+    navbar: {
+      height: '40px',
+      backgroundColor: '#EFD3D7',
+    },
+    navLink: {
+      color: '#6a040f',
+    },
+};
+
 const Partners = () => {
     return (
         <Router>
             <>
-                <Navbar bg='dark' variant='dark' expand='lg'>
+                <Navbar style={styles.navbar} expand='lg'>
                     <Container fluid>
                         <Navbar.Toggle aria-controls='navbar' />
                         <Navbar.Collapse id='navbar'>
                             <Nav>
-                                <Nav.Link as={Link} to='/researchers'>The Researchers</Nav.Link>
-                                <Nav.Link as={Link} to='/advisory'>Advisory Committee</Nav.Link>
-                                <Nav.Link as={Link} to='/organisations'>Partnering Organisations</Nav.Link>
+                                <Nav.Link as={Link} to='/researchers' style={styles.navLink}>The Researchers</Nav.Link>
+                                <Nav.Link as={Link} to='/advisory' style={styles.navLink}>Advisory Committee</Nav.Link>
+                                <Nav.Link as={Link} to='/organisations' style={styles.navLink}>Partnering Organisations</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>

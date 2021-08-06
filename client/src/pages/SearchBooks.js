@@ -1,9 +1,30 @@
 import React, { useState, useEffect } from 'react';
-import { Jumbotron, Container, Col, Form, Button, Card, CardColumns } from 'react-bootstrap';
+import { Container, Col, Form, Button, Card, CardColumns } from 'react-bootstrap';
 import Auth from '../utils/auth';
 import { saveBookIds, getSavedBookIds } from '../utils/localStorage';
 import { useMutation } from '@apollo/client';
 import { ADD_BOOK } from '../utils/mutations';
+
+const styles = {
+  h1: {
+    // fontWeight: 100,
+    
+    color: 'white',
+    textAlign: 'center',
+    paddingBottom: '10px',
+    borderBottom: '1px solid rgb(79, 98, 148)',
+  },
+
+  button: {
+    display: 'block',
+    appearance: 'none',
+    margin: '40px 0px 20px',
+    border: '1px solid #333',
+    textTransform: 'uppercase',
+    padding: '10px 20px',
+    borderRadius: '4px',
+  },
+}
 
 // Google books API (Third-party API), taken from original code provide in API.js
 const searchGoogleBooks = (query) => {
@@ -97,11 +118,11 @@ const SearchBooks = () => {
   return (
     <>
         <Container>
-          <h1 className='text-dark'>Search for publications</h1>
+          <h1 style={styles.h1} className='text-dark'>Search for publications</h1>
           <Form onSubmit={handleFormSubmit}>
             <Form.Row>
-                <Col xs={12} md={8}>
-                <Form.Control
+              <Col xs={12} md={8}>
+                <Form.Control 
                   name='searchInput'
                   value={searchInput}
                   onChange={(e) => setSearchInput(e.target.value)}
@@ -111,7 +132,12 @@ const SearchBooks = () => {
                 />
               </Col>
               <Col xs={12} md={4}>
-                <Button type='submit' variant='success' size='lg'>
+                <Button 
+                  style={styles.button} 
+                  type='submit' 
+                  variant='success' 
+                  size='lg'
+                >
                   Search
                 </Button>
               </Col>

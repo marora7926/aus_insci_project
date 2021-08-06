@@ -8,18 +8,29 @@ import Subscribe from './involved-subpages/Subscribe';
 import Feedback from './involved-subpages/Feedback'
 import Enquiry from './involved-subpages/Enquiry';
 
+const styles = {
+    navbar: {
+      height: '40px',
+      backgroundColor: '#ffccd5',
+    },
+    navLink: {
+      color: '#800f2f',
+
+    },
+};
+
 const GetInvolved = () => {
     return (
         <Router>
             <>
-                <Navbar bg='info' variant='dark' expand='lg'>
+                <Navbar style={styles.navbar} expand='lg'>
                     <Container fluid>
                         <Navbar.Toggle aria-controls='navbar' />
                         <Navbar.Collapse id='navbar'>
                             <Nav>
-                                <Nav.Link as={Link} to='/subscribe'>Subscribe</Nav.Link>
-                                <Nav.Link as={Link} to='/feedback'>Feedback Form</Nav.Link>
-                                <Nav.Link as={Link} to='/enquiry'>Enquiry Form</Nav.Link>
+                                <Nav.Link as={Link} to='/subscribe' style={styles.navLink}>Subscribe</Nav.Link>
+                                <Nav.Link as={Link} to='/feedback' style={styles.navLink}>Feedback Form</Nav.Link>
+                                <Nav.Link as={Link} to='/enquiry' style={styles.navLink}>Enquiry Form</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>

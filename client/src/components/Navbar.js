@@ -8,29 +8,32 @@ import LoginForm from './LoginForm';
 
 import Auth from '../utils/auth';
 
+
 const styles = {
   marquee: {
-      width: '100% !important',
+      width: '100%',
       direction: 'left',
       height: '40px',
-      backgroundColor: 'Warning !important',
+      backgroundColor: "#ade8f4", 
   },
-
-  marqueeText: {
-      display: 'inline-flex',
-      paddingBottom: '0px !important',
-  },
-
   ul: {
-    paddingBottom: '0px',
+    color: "#black",
+    display: 'inline-flex',
+    paddingBottom: '0px !important',
+    marginBottom: '0px',
   },
-  
-  text1: {
+  li: {
     marginLeft: '120px',
-    // padding: '8px',
     listStyleType: 'none',
     font: '30px',
-  }
+  },
+  navbar: {
+    height: '45px',
+    backgroundColor: '#2b2d42',
+  },
+  navLink: {
+    color: 'white',
+  },
 };
 
 const AppNavbar = () => {
@@ -41,32 +44,33 @@ const AppNavbar = () => {
     <>
       {/* <hr></hr> */}
       <Marquee style={styles.marquee}>
-        <ul style={styles.marqueeText}>
-          <li style={styles.text1}>The next Aus-InSCI Survey will be rolled out in January 2023</li>
-          <li style={styles.text1}>For viewing Australian results in details, please Login or Register</li>
-          <li style={styles.text1}>New: Lay summary for the employment paper has been added</li>
+        <ul style={styles.ul}>
+          <li style={styles.li}>The next Aus-InSCI Survey will be rolled out in January 2023.</li>
+          <li style={styles.li}>For viewing Australian results in details, please Login or Register.</li>
+          <li style={styles.li}>New: Lay summary for the employment paper has been added under results.</li>
         </ul>
       </Marquee>
-      <Navbar bg='dark' variant='dark' expand='lg'>
+      <Navbar style={styles.navbar} expand='lg'>
         <Container fluid>
-          <Navbar.Brand as={Link} to='/'>Aus-InSCI Project</Navbar.Brand>
+          {/* <Navbar.Brand as={Link} to='/'>Aus-InSCI Project</Navbar.Brand> */}
           <Navbar.Toggle aria-controls='navbar' />
           <Navbar.Collapse id='navbar'>
-            <Nav className='ml-auto'>
-            <Nav.Link as={Link} to='/'>About Aus-InSCI</Nav.Link>
-              <Nav.Link as={Link} to='/partners'>Research Partners</Nav.Link>
-              <Nav.Link as={Link} to='/results'>Results</Nav.Link>
-              <Nav.Link as={Link} to='/involved'>Get Involved</Nav.Link>
-              <Nav.Link as={Link} to='/search'>Search Literature</Nav.Link>
-              {/* <Nav.Link as={Link} to='/htmldata'>Australian Data</Nav.Link> */}
+          {/* <Nav className='ml-auto'> */}
+            <Nav style={styles.navLink}>
+              <Nav.Link as={Link} to='/' style={styles.navLink}>About Aus-InSCI</Nav.Link>
+              <Nav.Link as={Link} to='/partners' style={styles.navLink}>Research Partners</Nav.Link>
+              <Nav.Link as={Link} to='/results' style={styles.navLink}>Results</Nav.Link>
+              <Nav.Link as={Link} to='/involved'style={styles.navLink}>Get Involved</Nav.Link>
+              <Nav.Link as={Link} to='/search'style={styles.navLink}>Search Literature</Nav.Link>
+              {/* <Nav.Link as={Link} to='/htmldata' style={styles.navLink}>Australian Data</Nav.Link> */}
               {/* if user is logged in show saved books and logout */}
               {Auth.loggedIn() ? (
                 <>
-                  <Nav.Link as={Link} to='/saved'>Saved documents</Nav.Link>
-                  <Nav.Link onClick={Auth.logout}>Logout</Nav.Link>
+                  <Nav.Link as={Link} to='/saved' style={styles.navLink}>Saved documents</Nav.Link>
+                  <Nav.Link onClick={Auth.logout} style={styles.navLink}>Logout</Nav.Link>
                 </>
               ) : (
-                <Nav.Link onClick={() => setShowModal(true)}>Login/Register</Nav.Link>
+                <Nav.Link onClick={() => setShowModal(true)} style={styles.navLink}>Login/Register</Nav.Link>
               )}
             </Nav>
           </Navbar.Collapse>

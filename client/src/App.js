@@ -11,7 +11,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import AboutAusInsci from './pages/AboutAusInsci';
-// import AusInsci2018 from './pages/about-subpages/AusInsci2018';
 import Partners from './pages/Partners';
 import Results from './pages/Results';
 import GetInvolved from './pages/GetInvolved';
@@ -19,6 +18,7 @@ import GetInvolved from './pages/GetInvolved';
 import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
 // import ContentContainer from "./components/contentContainer";
+import Footer from './components/Footer';
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -52,7 +52,6 @@ function App() {
           <Header />
           <Navbar />
           <Switch>
-            {/* <Route exact path='/' component={AusInsci2018} /> */}
             <Route exact path='/' component={AboutAusInsci} />
             <Route exact path='/partners' component={Partners} />
             <Route exact path='/results' component={Results} />
@@ -63,6 +62,7 @@ function App() {
             <Route render={() => <h1 className='display-2'>Wrong page!</h1>} />
           </Switch>
           {/* <ContentContainer /> */}
+          <Footer />
         </>
       </Router>
     </ApolloProvider>

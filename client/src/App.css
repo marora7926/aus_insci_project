@@ -40,3 +40,6 @@
 /* .App-link {
   color: #dcf6fd;
 } */
+
+/* The asterisk (*) here is the CSS universal selectors and is used to select different types of elements.
+the command "box-sizing" tells the browser to account for any border and padding for an element's width and height.*/ 

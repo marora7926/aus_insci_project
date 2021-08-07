@@ -27,7 +27,7 @@ const Partners = () => {
                         <Navbar.Toggle aria-controls='navbar' />
                         <Navbar.Collapse id='navbar'>
                             <Nav>
-                                <Nav.Link as={Link} to='/researchers' style={styles.navLink}>The Researchers</Nav.Link>
+                                <Nav.Link as={Link} to='/researchers' style={styles.navLink}>The Research Team</Nav.Link>
                                 <Nav.Link as={Link} to='/advisory' style={styles.navLink}>Advisory Committee</Nav.Link>
                                 <Nav.Link as={Link} to='/organisations' style={styles.navLink}>Partnering Organisations</Nav.Link>
                             </Nav>
@@ -35,7 +35,7 @@ const Partners = () => {
                     </Container>
                 </Navbar>
                 <Switch>
-                    <Route exact path='/' component={Researchers} />
+                    {/* <Route exact path='/' component={Researchers} /> */}
                     <Route exact path='/researchers' component={Researchers} />
                     <Route exact path='/advisory' component={Advisory} />
                     <Route exact path='/organisations' component={Organisations} />

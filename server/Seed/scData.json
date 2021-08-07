@@ -14,32 +14,32 @@
     {
         "id": 3,
         "name": "Prof Ian Cameron",
-        "role": "Principal Investigator - New South Wales",
+        "role": "Principal Investigator - NSW",
         "representation": "Central Site"
     },
     {
         "id": 4,
         "name": "Prof Ashley Craig",
-        "role": "Consultant - New South Wales",
+        "role": "Consultant - NSW",
         "representation": "Central Site"
     },
     {
         "id": 5,
         "name": "Prof Tim Geraghty",
-        "role": "Principal Investigator",
-        "representation": "QLD Site"
+        "role": "Principal Investigator -QLD",
+        "representation": "Princess Alexandra Hospital"
     },
     {
         "id": 6,
         "name": "Dr Andrew Nunn",
-        "role": "Principal Investigator",
-        "representation": "VIC Site"
+        "role": "Principal Investigator - VIC",
+        "representation": "Austin Health"
     },
     {
         "id": 7,
         "name": "A/Prof Ruth Marshall",
-        "role": "Principal Investigator",
-        "representation": "SA Site"
+        "role": "Principal Investigator - SA",
+        "representation": "Hampstead Rehabilitation Centre"
     },
     {
         "id": 8,
@@ -69,12 +69,12 @@
         "id": 12,
         "name": "Ms Kylie Wicks",
         "role": "Consumer Organisation",
-        "representation": "ParaQuad NSW"
+        "representation": "Paraplegic & Quadriplegic Association of  NSW"
     },
     {
         "id": 13,
         "name": "Mr Peter Stewart",
         "role": "Consumer Organisation",
-        "representation": "P&Q SA"
+        "representation": "The Paraplegic & Quadriplegic Association of South Australia"
     }
 ]  

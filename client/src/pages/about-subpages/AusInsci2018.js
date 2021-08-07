@@ -76,7 +76,7 @@ const AusInsci2018 = () => {
                 to assist people with SCI realise their potential, to participate in and contribute to society, 
                 and to have a say in their own future.
             </p>
-            <h3 style={styles.h3}>How was survey undertaken?</h3>
+            <h3 style={styles.h3}>How was the survey undertaken?</h3>
             <p style={styles.p}>
                 The study recruited around 1,579 people with SCI in Australia in 2018-19. 
                 The study was a collaborative project between New South Wales, Queensland, South Australia 
@@ -88,7 +88,7 @@ const AusInsci2018 = () => {
                 Care NSW (icare NSW). The international coordinating and research centre was Swiss Paraplegic 
                 Research in Nottwil, Switzerland.
             </p>
-            <h3 style={styles.h3}>What the survey will inform?</h3>
+            <h3 style={styles.h3}>What will the survey inform?</h3>
             <p style={styles.p}>
                 The results from this survey are intended to inform improvements in health and disability/social 
                 support services, government policies, care and support. In addition to providing reliable and 

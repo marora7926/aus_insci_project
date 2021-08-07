@@ -49,7 +49,7 @@ function Footer() {
         </p>
         </div>
         <div style={styles.flexContainer}>
-          <p style={styles.p}>This Website is developed by Mohit Arora, © 2021 </p>
+          <p style={styles.p}>This website is developed by Mohit Arora, © 2021 </p>
         </div>
         <div style={styles.flexContainer}>
           <p style={styles.p}>

@@ -1,35 +1,91 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Button, Modal } from 'react-bootstrap';
 // import Paper1 from '../../assets/documents/cohort_profile_fekete.pdf';
 
+const styles = {
+    h3: {
+        margin: '5px 20px',
+        color: '#1b4332',
+    },
+    h4: {
+        margin: '10px 20px',
+        color: '#1b4332',
+    },
+    button: {
+        margin: '15px 20px',
+        // display: 'block',
+        // appearance: 'none',
+        background: "beige",
+        color: "black",
+        border: '1px solid #333',
+        textTransform: 'uppercase',
+        padding: '10px 20px',
+        borderRadius: '4px',
+    },
+    p: {
+      margin: '15px 20px',
+      color: '#343a40',
+    },
+}
+
+
 const Publications = () => {
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     return (
-        // <>
-        
-        // </>
         <>
-            <div class="container">
-                {/* Trigger the modal with a button */}
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-                {/* Modal */}
-                <div id="myModal" class="modal fade" role="dialog">
-                    <div class="modal-dialog modal-lg">
-                        {/* Modal content */}
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">Modal Header</h4>
-                            </div>
-                            <div class="modal-body">
-                                {/* <embed src={Paper1} frameborder="0" width="100%" height="400px" /> */}
-                                {/* <iframe onload="this.style.visibility = 'visible';" src={Paper1} width="100%" height="500" scrolling="yes" style="visibility:hidden;border-width:2px;border-style:dotted;border-color:#555555;" frameborder="0" allowfullscreen >TestPDF.</iframe> */}
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <h3 style={styles.h3}>Scientific papers published in peer-review Journals: Australian Data only</h3>
+        <hr></hr>
+        <h4 style={styles.h4}>#1 Employment outcomes following spinal cord injury.</h4>
+        <Button style={styles.button} variant="primary" onClick={handleShow}>
+        Access full article here
+        </Button>
+        <Modal show={show} onHide={handleClose}>
+            <Modal.Header closeButton>
+                <Modal.Title>Employment Descriptive Paper</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+                <p style={styles.p}>Citation:</p>
+                <p style={styles.p}>Borg SJ, Geraghty T, Arora M, Foster M, Marshall R, Nunn A, Middleton JW. Employment outcomes following spinal cord injury: a population-based cross-sectional study in Australia.</p> 
+                <p style={styles.p}>Spinal Cord. 2021 May 17. doi: 10.1038/s41393-021-00639-z.Epub ahead of print. PMID: 34002015.</p>
+                <p style={styles.p}>Free access not available.</p>
+            </Modal.Body>
+            <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+                Close
+            </Button>
+            <Button style={styles.button} variant="primary" href="https://www.nature.com/articles/s41393-021-00639-z" target="_blank" onClick={handleClose}>
+                Access here
+            </Button>
+            </Modal.Footer>
+        </Modal>
+        {/* <h2 style={styles.h2}>Scientific papers published in peer-review Journals: International Data</h2>
+        <hr></hr>
+        <h3 style={styles.h3}>#1 Employment outcomes following spinal cord injury.</h3>
+        <Button style={styles.button} variant="primary" onClick={handleShow}>
+        Access full article here
+        </Button>
+        <Modal show={show} onHide={handleClose}>
+            <Modal.Header closeButton>
+                <Modal.Title>Employment Descriptive Paper</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+                <p style={styles.p}>Citation:</p>
+                <p style={styles.p}>Borg SJ, Geraghty T, Arora M, Foster M, Marshall R, Nunn A, Middleton JW. Employment outcomes following spinal cord injury: a population-based cross-sectional study in Australia.</p> 
+                <p style={styles.p}>Spinal Cord. 2021 May 17. doi: 10.1038/s41393-021-00639-z.Epub ahead of print. PMID: 34002015.</p>
+                <p style={styles.p}>Free access available.</p>
+            </Modal.Body>
+            <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+                Close
+            </Button>
+            <Button style={styles.button} variant="primary" href="https://www.nature.com/articles/s41393-021-00639-z" target="_blank" onClick={handleClose}>
+                Access here
+            </Button>
+            </Modal.Footer>
+        </Modal> */}
         </>
     );
 };

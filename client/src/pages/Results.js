@@ -14,7 +14,7 @@ const styles = {
     backgroundColor: '#B7E4C7',
   },
   navLink: {
-    color: '#081c15',
+    color: '#1b4332',
   },
 };
 

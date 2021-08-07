@@ -4,11 +4,11 @@ import NatReport from '../assets/Aus-InSCI_National_Report.pdf'
 const styles = {
     h2: {
         margin: '5px 20px',
-        color: 'green',
+        color: '#1b4332',
     },
     h3: {
         margin: '10px 20px',
-        color: 'green',
+        color: '#1b4332',
     },
     p: {
       margin: '15px 20px',
@@ -24,6 +24,7 @@ const Report = () => {
     return (
         <>
         <h2 style={styles.h2}>National Aus-InSCI Report</h2>
+        <hr></hr>
         <p>
             <a style={styles.a} 
                 href={NatReport}

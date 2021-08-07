@@ -1,14 +1,13 @@
 import React from 'react';
+import { Carousel } from 'react-bootstrap'; 
+
+import ManOnWC from '../assets/man_wc.jpg'
+import WCAndBicycle from '../assets/wc_bicycle.jpg'
+import WCAndSky from '../assets/wc_sky.jpg'
 
 const styles = {
     img: {
-        height: '300px',
-        width: '100%',
-        margin: '10px 20px',
         marginBottom: '25px',
-        backgroundImage: './man_wc.jpg',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
     },
     h2: {
         margin: '5px 20px',
@@ -27,8 +26,37 @@ const styles = {
 const AusInsci2018 = () => {
     return (
         <>
+        <Carousel variant="dark">
+            <Carousel.Item interval={2000}>
+                <img 
+                style={styles.img}
+                className="d-block w-100"
+                src={ManOnWC}
+                alt="First slide"
+                />
+            </Carousel.Item>
+            <Carousel.Item interval={2000}>
+                <img
+                style={styles.img}
+                className="d-block w-100"
+                src={WCAndBicycle}
+                alt="Second slide"
+                />
+            </Carousel.Item>
+            <Carousel.Item interval={2000}>
+                <img
+                style={styles.img}
+                className="d-block w-100"
+                src={WCAndSky}
+                alt="Third slide"
+                />
+                {/* <Carousel.Caption>
+                <h5>Third slide label</h5>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </Carousel.Caption> */}
+            </Carousel.Item>
+        </Carousel>
         <h2 style={styles.h2}>What is the Aus-InSCI 2018 Community Survey?</h2>
-        <img style={styles.img} alt="manOnWC"></img>
         <div>
             <h3 style={styles.h3}>What is the project background?</h3>
             <p style={styles.p}>

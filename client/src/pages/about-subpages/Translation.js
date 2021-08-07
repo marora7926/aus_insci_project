@@ -1,4 +1,9 @@
 import React from 'react';
+import { Carousel } from 'react-bootstrap'; 
+
+import ManOnWC from '../assets/man_wc.jpg'
+import WCAndBicycle from '../assets/wc_bicycle.jpg'
+import WCAndSky from '../assets/wc_sky.jpg'
 
 const styles = {
     img: {
@@ -36,6 +41,36 @@ const styles = {
 const Translation = () => {
     return (
         <>
+            <Carousel variant="dark">
+                <Carousel.Item interval={2000}>
+                    <img 
+                    style={styles.img}
+                    className="d-block w-100"
+                    src={ManOnWC}
+                    alt="First slide"
+                    />
+                </Carousel.Item>
+                <Carousel.Item interval={2000}>
+                    <img
+                    style={styles.img}
+                    className="d-block w-100"
+                    src={WCAndBicycle}
+                    alt="Second slide"
+                    />
+                </Carousel.Item>
+                <Carousel.Item interval={2000}>
+                    <img
+                    style={styles.img}
+                    className="d-block w-100"
+                    src={WCAndSky}
+                    alt="Third slide"
+                    />
+                    {/* <Carousel.Caption>
+                    <h5>Third slide label</h5>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </Carousel.Caption> */}
+                </Carousel.Item>
+            </Carousel>
             <h2 style={styles.h2}>What is the Aus-InSCI Translation Project?</h2>
             <img style={styles.img} alt="wc_sky"></img>
             <div>

@@ -63,7 +63,7 @@ const AusInsci2023 = () => {
                 </Carousel.Item>
             </Carousel>
             <h2 style={styles.h2}>What is the Aus-InSCI 2023 Community Survey?</h2>
-            <img style={styles.img} alt="wc_bicycle"></img>
+            {/* <img style={styles.img} alt="wc_bicycle"></img> */}
             <div>
                 <h3 style={styles.h3}>What is the project background?</h3>
                 <p style={styles.p}>

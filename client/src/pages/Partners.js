@@ -15,6 +15,7 @@ const styles = {
     },
     navLink: {
       color: '#6a040f',
+      padding: '0px 25px 0px 10px',
     },
     container: {
         padding: '0px',
@@ -31,14 +32,14 @@ const Partners = () => {
                         <Navbar.Collapse id='navbar'>
                             <Nav>
                                 <Nav.Link as={Link} to='/researchers' style={styles.navLink}>The Research Team</Nav.Link>
-                                <Nav.Link as={Link} to='/advisory' style={styles.navLink}>Advisory Committee</Nav.Link>
-                                <Nav.Link as={Link} to='/organisations' style={styles.navLink}>Partnering Organisations</Nav.Link>
+                                <Nav.Link as={Link} to='/advisory' style={styles.navLink}>Advisory Committees</Nav.Link>
+                                <Nav.Link as={Link} to='/organisations' style={styles.navLink}>Partner Organisations</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
                 <Switch>
-                    {/* <Route exact path='/' component={Researchers} /> */}
+                    <Route exact path='/partners' component={Researchers} />
                     <Route exact path='/researchers' component={Researchers} />
                     <Route exact path='/advisory' component={Advisory} />
                     <Route exact path='/organisations' component={Organisations} />

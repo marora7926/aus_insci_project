@@ -20,11 +20,13 @@ const HtmlData = () => {
         <>
         <h2 style={styles.h2}>National Aus-InSCI Report</h2>
         <hr></hr>
+            <Container>
             <a style={styles.a} 
                 href="./assets/AustraliaData.html"
                 target="_blank">
               Access results here
             </a>
+            </Container>
         </>
     );
 };

@@ -54,6 +54,7 @@ function Footer() {
         <div style={styles.flexContainer}>
           <p style={styles.p}>
             <a style={styles.a} href={Enquiry}>Contact us</a>
+            <a style={styles.a} href={Privacy} download="Acknowledgements">Acknowledgements</a>
             <a style={styles.a} href={Privacy} download="Privacy">Privacy</a>
             <a style={styles.a} href={Disclaimer} download="Disclaimer">Disclaimer</a>
           </p>

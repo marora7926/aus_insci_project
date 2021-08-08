@@ -72,7 +72,7 @@ const Translation = () => {
                 </Carousel.Item>
             </Carousel>
             <h2 style={styles.h2}>What is the Aus-InSCI Translation Project?</h2>
-            <img style={styles.img} alt="wc_sky"></img>
+            {/* <img style={styles.img} alt="wc_sky"></img> */}
             <div>
                 <h3 style={styles.h3}>What is the project Background?</h3>
                 <p style={styles.p}>

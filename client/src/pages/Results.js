@@ -15,6 +15,7 @@ const styles = {
   },
   navLink: {
     color: '#1b4332',
+    padding: '0px 25px 0px 10px',
   },
   container: {
     padding: '0px',
@@ -39,8 +40,9 @@ const Results = () => {
           </Container>
         </Navbar>
         <Switch>
-          <Route exact path='/report' component={Report} />
+          <Route exact path='/results' component={Plain} />
           <Route exact path='/plain' component={Plain} />
+          <Route exact path='/report' component={Report} />
           <Route exact path='/publications' component={Publications} />
         </Switch>
       </>

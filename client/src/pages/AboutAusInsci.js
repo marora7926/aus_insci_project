@@ -14,6 +14,7 @@ const styles = {
     },
     navLink: {
       color: 'purple',
+      padding: '0px 25px 0px 10px',
     },
     container: {
         padding: '0px',

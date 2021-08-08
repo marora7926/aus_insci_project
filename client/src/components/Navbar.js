@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Navbar, Nav, Container, Modal, Tab } from 'react-bootstrap';
 import Marquee from "react-fast-marquee";
 
@@ -8,6 +8,7 @@ import LoginForm from './LoginForm';
 
 import Auth from '../utils/auth';
 
+import './navbar.css';
 
 const styles = {
   marquee: {
@@ -36,13 +37,20 @@ const styles = {
   },
   navLink: {
     color: 'white',
+    padding: '8px 10px 8px 8px',
   },
 };
+
+const pageReference = {
+  "/translation" : "/"
+}
 
 const AppNavbar = () => {
   // set modal display state
   const [showModal, setShowModal] = useState(false);
-
+  const location = useLocation();
+  const parentLink = pageReference[location.pathname];
+  console.log(parentLink)
   return (
     <>
       {/* <hr></hr> */}
@@ -60,20 +68,72 @@ const AppNavbar = () => {
           <Navbar.Collapse id='navbar'>
           {/* <Nav className='ml-auto'> */}
             <Nav style={styles.navLink}>
-              <Nav.Link as={Link} to='/' style={styles.navLink}>About Aus-InSCI</Nav.Link>
-              <Nav.Link as={Link} to='/partners' style={styles.navLink}>Research Partners</Nav.Link>
-              <Nav.Link as={Link} to='/results' style={styles.navLink}>Results</Nav.Link>
-              <Nav.Link as={Link} to='/involved'style={styles.navLink}>Get Involved</Nav.Link>
-              <Nav.Link as={Link} to='/search'style={styles.navLink}>Search Literature</Nav.Link>
-              <Nav.Link as={Link} to='/htmldata' style={styles.navLink}>Descripitve Analysis</Nav.Link>
+              <Nav.Link 
+                as={Link} to='/'
+                style={styles.navLink}
+                className={(location.pathname === '/' || parentLink === '/') ? 'nav-link active' : 'none'}
+              >
+                About Aus-InSCI
+              </Nav.Link>
+              <Nav.Link 
+                as={Link} to='/partners' 
+                style={styles.navLink}
+                className={(location.pathname === '/partners' || parentLink === '/partners') ? 'nav-link active' : 'none'}
+              >
+                Research Partners
+              </Nav.Link>
+              <Nav.Link as={Link} 
+                to='/results' 
+                style={styles.navLink}
+                className={(location.pathname === '/results' || parentLink === '/results') ? 'nav-link active' : 'none'}
+                >
+                  Results
+              </Nav.Link>
+              <Nav.Link 
+                as={Link} to='/involved'
+                style={styles.navLink}
+                className={(location.pathname === '/involved' || parentLink === '/involved') ? 'nav-link active' : 'none'}
+              >
+                Get Involved
+              </Nav.Link>
+              <Nav.Link 
+                as={Link} to='/search'
+                style={styles.navLink}
+                className={(location.pathname === '/search' || parentLink === '/search') ? 'nav-link active' : 'none'}
+              >
+                Search Literature
+              </Nav.Link>
+              <Nav.Link 
+                as={Link} to='/htmldata' 
+                style={styles.navLink}
+                className={(location.pathname === '/htmldata' || parentLink === '/htmldata') ? 'nav-link active' : 'none'}
+              >
+                Descripitve Analysis
+              </Nav.Link>
               {/* if user is logged in show saved books and logout */}
               {Auth.loggedIn() ? (
                 <>
-                  <Nav.Link as={Link} to='/saved' style={styles.navLink}>Saved documents</Nav.Link>
-                  <Nav.Link onClick={Auth.logout} style={styles.navLink}>Logout</Nav.Link>
+                  <Nav.Link 
+                    as={Link} to='/saved' 
+                    style={styles.navLink}
+                    className={(location.pathname === '/saved' || parentLink === '/saved') ? 'nav-link active' : 'none'}
+                  >
+                    Saved documents
+                  </Nav.Link>
+                  <Nav.Link 
+                    onClick={Auth.logout} 
+                    style={styles.navLink}
+                  >
+                    Logout
+                  </Nav.Link>
                 </>
               ) : (
-                <Nav.Link onClick={() => setShowModal(true)} style={styles.navLink}>Login/Register</Nav.Link>
+                <Nav.Link 
+                  onClick={() => setShowModal(true)} 
+                  style={styles.navLink}
+                >
+                  Login/Register
+                </Nav.Link>
               )}
             </Nav>
           </Navbar.Collapse>

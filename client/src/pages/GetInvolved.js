@@ -15,6 +15,7 @@ const styles = {
     },
     navLink: {
       color: '#800f2f',
+      padding: '0px 25px 0px 10px',
     },
     container: {
         padding: '0px',
@@ -38,6 +39,7 @@ const GetInvolved = () => {
                     </Container>
                 </Navbar>
                 <Switch>
+                    <Route exact path='/involved' component={Subscribe} />
                     <Route exact path='/subscribe' component={Subscribe} />
                     <Route exact path='/feedback' component={Feedback} />
                     <Route exact path='/enquiry' component={Enquiry} />

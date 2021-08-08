@@ -56,33 +56,92 @@ Creating a simple, secure and responsive application that allows a users to gene
 ```
 ## <span style="color:lightgreen">User story</span>
 ``` 
-AS A busy professional who manages many systems with different password requirements
-I want a simple and secure Password Management System that ALLOWS me to generate and store different passwords,
-SO THAT I can access them when required for every registered account.
+AS A Australian Consumer with Spinal Cord Injury or other Stakeholder, 
+I WANT TO access important findings of the Aus-InSCI Community Survey that was undertaken in 2018 in Australia as well as ABLE to access all related information and published resources.  
 ``` 
 
 ## <span style="color:lightgreen">Acceptance criteria</span>
-``` 
-GIVEN I do not have an account in the password genie app
-WHEN I click register THEN I am presented with a form AND I need to enter a username, email and password
-WHEN I enter an exisitng user email to register THEN I am presented with an error message to notify me that the username has been taken
-WHEN I submit the form with a unique email THEN I am taken to the user dashboard
- 
-GIVEN I have an account in the password genie app 
-WHEN I enter registered username and password THEN I am taken to the user dashboard
+```
+GIVEN the Aus-InSCI Project app
+WHEN I load the Aus-InSCI app
+THEN I am presented with a home page with Header, Navbars, Sub-component Navbars, Content and footer sections.
 
-GIVEN I have an account in the password genie app
-WHEN log in THEN I am presented with a dashboard
-AND I have the option to create a new item, view an exisitng item, edit an existing item and delete an existing item.
+IN THE HEADER section, I am presented with the title of the app
+EVERYTIME I click the title of the app in the header section, I land on the home page, irrespective of my location within the app.
 
-GIVEN I have logged in to the password genie app,
-WHEN I choose to create a new item THEN I am presented with a form.
-AND I need to enter a website name, url of website, username and type a password or generate a password using a modal with different user requirement.
-WHEN I submit the form THEN I am taken back to the dashboard and I can see my newly created item.
-WHEN I choose to edit an existing item THEN I am presented with a pre-filled form with existing data
-AND I can edit the website name, url of website, username and type or generate a new password using a modal with different user requirement
-WHEN I submit the form THEN I am taken back to the dashboard and I can see my updated password item.
-WHEN I choose to delete an existing item THEN the password item is removed from the dashboard.
+IN THE NAVBAR section, I AM presented with a MARQUEE with latest news as well as six NAVTABS
+WHEN I click on any NAVTAB, it gets in active more and AS A user, I am able to see this.
+
+WHEN I click the FIRST NAVTAB, which is about Aus-InSCI Project
+THEN I presented with THREE Sub-components NAVTABS, namely Aus-InSCI 2018, Aus-InSCI 2023 and Translation Project
+WHEN I click any of the Sub-components NAVTABS
+I AM presented with information realed to Aus-InSCI 2018, Aus-InSCI 2023 and Translation Project, respectively 
+
+WHEN I click the SECOND NAVTAB, which is about Reseach Partners,
+THEN I presented with THREE Sub-components NAVTABS, namely Research Team, Advisory Committees and Partner Organisations.
+
+  WHEN I click the Research Team Sub-components NAVTABS
+  THEN I AM presented with a short portfolio for each member of the research team from the four participating Australian states
+
+  WHEN I click the Advisory Commitees Sub-components NAVTABS
+  THEN I AM presented with membership list of each of the working committees
+
+  WHEN I click the Partner Organisation Sub-components NAVTABS
+  THEN I AM presented with logo of each of the partner organisation in a MARQUEE
+
+WHEN I click the THIRD NAVTAB, which is about Aus-InSCI Results
+THEN I presented with THREE Sub-components NAVTABS, namely Plain Language Documents, National Report and Scientific Publications.
+
+  WHEN I click the Plain Language Sub-components NAVTABS
+  THEN I AM presented with link to access plain language result of the Aus-InSCI survey for consumers
+
+  WHEN I click the National Report Sub-components NAVTABS
+  THEN I AM presented with the summary as well as link to access the Australian National Report of the Aus-InSCI survey
+
+  WHEN I click the Scientific Publication Sub-components NAVTABS
+  THEN I AM presented a list of published national and international articles as well as the link to access these
+  
+WHEN I click the FOURTH NAVTAB, which is about Get-Involved
+THEN I presented with THREE Sub-components NAVTABS, namely
+  Subscribe - for subcribing for future research
+  Feedback Form - for provinding feedback on result or website, and 
+  Enquiry Form - for contact the study centre for an general query
+
+WHEN I click the FIFTH NAVTAB, which is about Search Literature using Web-API
+THEN I am presented with an input field to search for literature and a submit button
+WHEN I am not logged in and enter a search term in the input field and click the submit button
+THEN I am presented with several search results, each featuring article’s title with link to it, author, journal name, year of publication, volume number, issue number and page number on google scholar website.
+
+WHEN I click the SIXTH NAVTAB, which is Login/Register
+THEN a modal appears on the screen with a toggle between the option to login or register
+
+WHEN the toggle is set to REGISTER
+THEN I am presented with three inputs for a username, an email address, and a password, and a signup button
+WHEN I enter a valid email address and create a password and click on the signup button
+THEN my user account is created and I am logged in to the site
+
+WHEN the toggle is set to LOGIN
+THEN I am presented with two inputs for an email address and a password and login button
+WHEN I enter my account’s email address and password and click on the login button
+THEN I the modal closes and I am logged in to the site
+
+WHEN I am logged in to the site
+THEN the I am presented with two additional NAVTABS, namely, Descriptive Data and Saved Literature as well as Login/Register NAVTAB change to Logout NAVTAB
+
+WHEN I click the Descriptive Data Sub-components NAVTABS
+THEN I AM presented with the summary and descriptive statistical analysis of the Australian Aus-InSCI survey data
+
+WHEN I am logged in and enter a search term in the input field and click the submit button
+THEN this time I will be presented with articles' details as well as a button to save my search to my account
+WHEN I click on the Save button on a search article
+THEN that article's information is saved to my account
+WHEN I click on the option to see my saved Saved Literature
+THEN I am presented with articles' details as well as a button to remove a book from my account
+WHEN I click on the Remove Article on a article
+THEN that article is deleted from my saved literature list
+
+WHEN I click on the Logout button
+THEN I am logged out of the site and land on the home page with Six NAVTABS
 ```
 ## <span style="color:lightgreen">Packages</span>
   * [apollo/client](xx)

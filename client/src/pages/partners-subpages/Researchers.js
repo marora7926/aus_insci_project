@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Container, Image } from 'react-bootstrap';
-import AvatarM from '../partners-subpages/male-avatar.jpg'
-import AvatarF from '../partners-subpages/female-avatar.jpg'
+import AvatarM from '../assets/male-avatar.jpg'
+import AvatarF from '../assets/female-avatar.jpg'
 
 const styles = {
   h3: {
@@ -18,6 +18,7 @@ const styles = {
     border: '2px solid #6a040f',
   },
   header: {
+    padding: '8px',
     color: '#6a040f',
     backgroundColor: '#EFD3D7',
     fontSize: '20px',
@@ -66,7 +67,7 @@ export default function Researchers() {
                 <Image style={styles.image} src={ AvatarM } roundedCircle />
             </Container>
           <Card.Text style={styles.text}>
-            Mohit has Ph.D. in Medicine from The University of Sydney (2013-2017) and has over 15 years clinical and 
+            Mohit is a Postdoctoral Fellow at the University of Sydney (2013-2017) and has over 15 years clinical and 
             research experience in the field of spinal cord injury.
           </Card.Text>
           <a style={styles.a} href="https://www.sydney.edu.au/medicine-health/about/our-people/academic-staff/mohit-arora.html" target="_blank">More details</a>
@@ -95,11 +96,24 @@ export default function Researchers() {
             </Container>
           <Card.Text style={styles.text}>
             Ashley is a Professor of Rehabilitation Studies and a Senior Clinical Psychologist in the 
-            READ Clinic treating people witg neurological and musculoskeletal injuries.
+            READ Clinic treating people with neurological and musculoskeletal injuries.
           </Card.Text>
           <a style={styles.a} href="https://www.sydney.edu.au/medicine-health/about/our-people/academic-staff/a-craig.html" target="_blank">More details</a>
         </Card.Body>
       </Card>
+{/* 
+      <Card style={styles.card}>
+        <Card.Header style={styles.header}>Dr Annette Kifley</Card.Header>
+        <Card.Body style={styles.cardBody}>
+            <Container>
+                <Image style={styles.image} src={ AvatarF } roundedCircle />
+            </Container>
+          <Card.Text style={styles.text}>
+            Annette is a Biostatistician....
+          </Card.Text>
+          <a style={styles.a} href="https://www.sydney.edu.au/medicine-health/about/our-people/academic-staff/a-craig.html" target="_blank">More details</a>
+        </Card.Body>
+      </Card> */}
       </div>
       <hr></hr>
 

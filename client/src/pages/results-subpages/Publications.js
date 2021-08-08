@@ -12,7 +12,7 @@ const styles = {
         color: '#1b4332',
     },
     button: {
-        margin: '15px 20px',
+        margin: '15px 55px',
         // display: 'block',
         // appearance: 'none',
         background: "beige",

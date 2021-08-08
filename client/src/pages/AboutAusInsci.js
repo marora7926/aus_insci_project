@@ -15,6 +15,9 @@ const styles = {
     navLink: {
       color: 'purple',
     },
+    container: {
+        padding: '0px',
+    },
 };
 
 function AboutAusInsci () {
@@ -22,7 +25,7 @@ function AboutAusInsci () {
         <Router>
         <>
             <Navbar style={styles.navbar} expand='lg'>
-                <Container fluid>
+                <Container fluid style={styles.container}>
                     <Navbar.Toggle aria-controls='navbar' />
                     <Navbar.Collapse id='navbar'>
                         <Nav>

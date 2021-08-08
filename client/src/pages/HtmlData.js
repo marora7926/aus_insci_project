@@ -1,39 +1,32 @@
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-// import { Jumbotron, Container, Navbar, Nav } from 'react-bootstrap';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
+// import HTML from "./assets/AustraliaData.html"
 
-// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+const styles = {
+    h2: {
+        margin: '5px 20px',
+        color: '#1b4332',
+    },
+    a: {
+        margin: '20px',
+        padding: '10px',
+        fontSize: '20px',
+    },
+}
 
-// const HtmlData = () => {
-//     return (
-//         <Router>
-//             <>
-//                 {/* <Jumbotron fluid className='text-light bg-dark'>
-//                     <Container>
-//                         <h1>Project Team</h1>
-//                     </Container>
-//                 </Jumbotron> */}
-//                 <Navbar bg='dark' variant='dark' expand='lg'>
-//                     <Container fluid>
-//                         <Navbar.Toggle aria-controls='navbar' />
-//                         <Navbar.Collapse id='navbar'>
-//                             <Nav>
-//                                 <Nav.Link as={Link} to='/researchers'>The Researchers</Nav.Link>
-//                                 <Nav.Link as={Link} to='/advisory'>Advisory Committee</Nav.Link>
-//                                 <Nav.Link as={Link} to='/organisations'>Partnering Organisations</Nav.Link>
-//                             </Nav>
-//                         </Navbar.Collapse>
-//                     </Container>
-//                 </Navbar>
-//                 <Switch>
-//                     <Route exact path='/' component={Researchers} />
-//                     <Route exact path='/researchers' component={Researchers} />
-//                     <Route exact path='/advisory' component={Advisory} />
-//                     <Route exact path='/organisations' component={Organisations} />
-//                 </Switch>
-//             </>
-//         </Router>
-//     );
-// };
+const HtmlData = () => {
+    return (
+        <>
+        <h2 style={styles.h2}>National Aus-InSCI Report</h2>
+        <hr></hr>
+            <a style={styles.a} 
+                href="./assets/AustraliaData.html"
+                target="_blank">
+              Access results here
+            </a>
+        </>
+    );
+};
 
-// export default HtmlData;
+export default HtmlData;

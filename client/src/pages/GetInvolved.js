@@ -15,7 +15,9 @@ const styles = {
     },
     navLink: {
       color: '#800f2f',
-
+    },
+    container: {
+        padding: '0px',
     },
 };
 
@@ -24,7 +26,7 @@ const GetInvolved = () => {
         <Router>
             <>
                 <Navbar style={styles.navbar} expand='lg'>
-                    <Container fluid>
+                    <Container fluid style={styles.container}>
                         <Navbar.Toggle aria-controls='navbar' />
                         <Navbar.Collapse id='navbar'>
                             <Nav>

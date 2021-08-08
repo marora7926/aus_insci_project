@@ -14,10 +14,9 @@ import AboutAusInsci from './pages/AboutAusInsci';
 import Partners from './pages/Partners';
 import Results from './pages/Results';
 import GetInvolved from './pages/GetInvolved';
-// import HtmlData from './pages/HtmlData';
+import HtmlData from './pages/HtmlData';
 import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
-// import ContentContainer from "./components/contentContainer";
 import Footer from './components/Footer';
 
 // Construct our main GraphQL API endpoint
@@ -56,12 +55,11 @@ function App() {
             <Route exact path='/partners' component={Partners} />
             <Route exact path='/results' component={Results} />
             <Route exact path='/involved' component={GetInvolved} />
-            {/* <Route exact path='/htmldata' component={HtmlData} /> */}
             <Route exact path='/search' component={SearchBooks} />
+            <Route exact path='/htmldata' component={HtmlData} />
             <Route exact path='/saved' component={SavedBooks} />
             <Route render={() => <h1 className='display-2'>Wrong page!</h1>} />
           </Switch>
-          {/* <ContentContainer /> */}
           <Footer />
         </>
       </Router>

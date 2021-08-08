@@ -37,7 +37,7 @@ const Plain = () => {
         <>
         <h3 style={styles.h3}>Plain language sumarry documents: Australian Data only</h3>
         <hr></hr>
-        <h4 style={styles.h4}>#1 Overall Study reults</h4>
+        <h4 style={styles.h4}>#1 Overall study results</h4>
         <Button style={styles.button} variant="primary" onClick={handleShow}>
         Access full article here
         </Button>
@@ -46,10 +46,6 @@ const Plain = () => {
                 <Modal.Title>Employment Descriptive Paper</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                {/* <p style={styles.p}>Citation:</p>
-                <p style={styles.p}>Borg SJ, Geraghty T, Arora M, Foster M, Marshall R, Nunn A, Middleton JW. Employment outcomes following spinal cord injury: a population-based cross-sectional study in Australia.</p> 
-                <p style={styles.p}>Spinal Cord. 2021 May 17. doi: 10.1038/s41393-021-00639-z.Epub ahead of print. PMID: 34002015.</p>
-                <p style={styles.p}>Free access not available.</p> */}
             </Modal.Body>
             <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>

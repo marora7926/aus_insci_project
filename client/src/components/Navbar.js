@@ -31,6 +31,9 @@ const styles = {
     height: '45px',
     backgroundColor: '#2b2d42',
   },
+  container: {
+    padding: '0px',
+  },
   navLink: {
     color: 'white',
   },
@@ -51,7 +54,7 @@ const AppNavbar = () => {
         </ul>
       </Marquee>
       <Navbar style={styles.navbar} expand='lg'>
-        <Container fluid>
+        <Container fluid style={styles.container}>
           {/* <Navbar.Brand as={Link} to='/'>Aus-InSCI Project</Navbar.Brand> */}
           <Navbar.Toggle aria-controls='navbar' />
           <Navbar.Collapse id='navbar'>
@@ -62,7 +65,7 @@ const AppNavbar = () => {
               <Nav.Link as={Link} to='/results' style={styles.navLink}>Results</Nav.Link>
               <Nav.Link as={Link} to='/involved'style={styles.navLink}>Get Involved</Nav.Link>
               <Nav.Link as={Link} to='/search'style={styles.navLink}>Search Literature</Nav.Link>
-              {/* <Nav.Link as={Link} to='/htmldata' style={styles.navLink}>Australian Data</Nav.Link> */}
+              <Nav.Link as={Link} to='/htmldata' style={styles.navLink}>Descripitve Analysis</Nav.Link>
               {/* if user is logged in show saved books and logout */}
               {Auth.loggedIn() ? (
                 <>

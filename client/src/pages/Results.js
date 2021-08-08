@@ -16,6 +16,9 @@ const styles = {
   navLink: {
     color: '#1b4332',
   },
+  container: {
+    padding: '0px',
+  },
 };
 
 const Results = () => {
@@ -24,7 +27,7 @@ const Results = () => {
     <Router>
       <>
         <Navbar style={styles.navbar} expand='lg'>
-          <Container fluid>
+          <Container fluid style={styles.container}>
             <Navbar.Toggle aria-controls='navbar' />
             <Navbar.Collapse id='navbar'>
               <Nav>

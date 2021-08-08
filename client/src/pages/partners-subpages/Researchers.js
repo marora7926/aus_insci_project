@@ -56,7 +56,7 @@ export default function Researchers() {
             James is a Consultant in Rehabilitation Medicine with over 25 years clinical and 
             research experience in the field of spinal cord injury medicine and rehabilitation.
             </Card.Text>
-            <a style={styles.a} href="https://www.sydney.edu.au/medicine-health/about/our-people/academic-staff/james-middleton.html" target="_blank">More details</a>
+            <a style={styles.a} href="https://www.sydney.edu.au/medicine-health/about/our-people/academic-staff/james-middleton.html" target="_blank" rel="noopener noreferrer">More details</a>
         </Card.Body>
       </Card>
       
@@ -70,7 +70,7 @@ export default function Researchers() {
             Mohit is a Postdoctoral Fellow at the University of Sydney (2013-2017) and has over 15 years clinical and 
             research experience in the field of spinal cord injury.
           </Card.Text>
-          <a style={styles.a} href="https://www.sydney.edu.au/medicine-health/about/our-people/academic-staff/mohit-arora.html" target="_blank">More details</a>
+          <a style={styles.a} href="https://www.sydney.edu.au/medicine-health/about/our-people/academic-staff/mohit-arora.html" target="_blank" rel="noopener noreferrer">More details</a>
         </Card.Body>
       </Card>
       
@@ -84,7 +84,7 @@ export default function Researchers() {
             Ian is a Consultant Physician in Rehabilitation Medicine and has the Chair in Rehabilitation Medicine, 
             at the University of Sydney. He holds a NHMRC Practitioner Fellowship.
           </Card.Text>
-          <a style={styles.a} href="https://www.sydney.edu.au/medicine-health/about/our-people/academic-staff/ian-cameron.html" target="_blank">More details</a>
+          <a style={styles.a} href="https://www.sydney.edu.au/medicine-health/about/our-people/academic-staff/ian-cameron.html" target="_blank" rel="noopener noreferrer">More details</a>
         </Card.Body>
       </Card>
       
@@ -98,7 +98,7 @@ export default function Researchers() {
             Ashley is a Professor of Rehabilitation Studies and a Senior Clinical Psychologist in the 
             READ Clinic treating people with neurological and musculoskeletal injuries.
           </Card.Text>
-          <a style={styles.a} href="https://www.sydney.edu.au/medicine-health/about/our-people/academic-staff/a-craig.html" target="_blank">More details</a>
+          <a style={styles.a} href="https://www.sydney.edu.au/medicine-health/about/our-people/academic-staff/a-craig.html" target="_blank" rel="noopener noreferrer">More details</a>
         </Card.Body>
       </Card>
 {/* 
@@ -111,7 +111,7 @@ export default function Researchers() {
           <Card.Text style={styles.text}>
             Annette is a Biostatistician....
           </Card.Text>
-          <a style={styles.a} href="https://www.sydney.edu.au/medicine-health/about/our-people/academic-staff/a-craig.html" target="_blank">More details</a>
+          <a style={styles.a} href="https://www.sydney.edu.au/medicine-health/about/our-people/academic-staff/a-craig.html" target="_blank" rel="noopener noreferrer">More details</a>
         </Card.Body>
       </Card> */}
       </div>
@@ -128,7 +128,7 @@ export default function Researchers() {
           <Card.Text style={styles.text}>
             Detials will be added shortly.
           </Card.Text>
-          <a style={styles.a} href="https://www.hopkinscentre.edu.au/people-view/tim-geraghty-39" target="_blank">More details</a>
+          <a style={styles.a} href="https://www.hopkinscentre.edu.au/people-view/tim-geraghty-39" target="_blank" rel="noopener noreferrer">More details</a>
         </Card.Body>
       </Card>
 
@@ -141,7 +141,7 @@ export default function Researchers() {
           <Card.Text style={styles.text}>
             Detials will be added shortly.
           </Card.Text>
-          <a style={styles.a} href="http://www.hopkinscentre.edu.au/people-view/samantha-borg-151" target="_blank">More details</a>
+          <a style={styles.a} href="http://www.hopkinscentre.edu.au/people-view/samantha-borg-151" target="_blank" rel="noopener noreferrer">More details</a>
         </Card.Body>
       </Card>
 
@@ -154,7 +154,7 @@ export default function Researchers() {
           <Card.Text style={styles.text}>
             Detials will be added shortly.
           </Card.Text>
-          <a style={styles.a} href="http://www.hopkinscentre.edu.au/people-view/delena-amsters-51" target="_blank">More details</a>
+          <a style={styles.a} href="http://www.hopkinscentre.edu.au/people-view/delena-amsters-51" target="_blank" rel="noopener noreferrer">More details</a>
         </Card.Body>
       </Card>
       </div>
@@ -171,7 +171,7 @@ export default function Researchers() {
           <Card.Text style={styles.text}>
             Detials will be added shortly.
           </Card.Text>
-          <a style={styles.a} href="https://www.linkedin.com/in/ruth-marshall-51a56219/?originalSubdomain=au" target="_blank">More details</a>
+          <a style={styles.a} href="https://www.linkedin.com/in/ruth-marshall-51a56219/?originalSubdomain=au" target="_blank" rel="noopener noreferrer">More details</a>
         </Card.Body>
       </Card>
 
@@ -184,7 +184,7 @@ export default function Researchers() {
           <Card.Text style={styles.text}>
             Detials will be added shortly.
           </Card.Text>
-          <a style={styles.a} href="#" target="_blank">More details</a>
+          <a style={styles.a} href="./" target="_blank" rel="noopener noreferrer">More details</a>
         </Card.Body>
       </Card>
       </div>
@@ -201,7 +201,7 @@ export default function Researchers() {
           <Card.Text style={styles.text}>
             Detials will be added shortly.
           </Card.Text>
-          <a style={styles.a} href="https://www.thesri.org/profiles/dr-andrew-nunn/" target="_blank">More details</a>
+          <a style={styles.a} href="https://www.thesri.org/profiles/dr-andrew-nunn/" target="_blank" rel="noopener noreferrer">More details</a>
         </Card.Body>
       </Card>
 
@@ -214,7 +214,7 @@ export default function Researchers() {
           <Card.Text style={styles.text}>
             Detials will be added shortly.
           </Card.Text>
-          <a style={styles.a} href="#" target="_blank">More details</a>
+          <a style={styles.a} href="./" target="_blank" rel="noopener noreferrer">More details</a>
         </Card.Body>
       </Card>
 
@@ -227,7 +227,7 @@ export default function Researchers() {
           <Card.Text style={styles.text}>
             Detials will be added shortly.
           </Card.Text>
-          <a style={styles.a} href="linkedin.com/in/marnie-graco-9a128a177/?originalSubdomain=au" target="_blank">More details</a>
+          <a style={styles.a} href="linkedin.com/in/marnie-graco-9a128a177/?originalSubdomain=au" target="_blank" rel="noopener noreferrer">More details</a>
         </Card.Body>
       </Card>
       </div>

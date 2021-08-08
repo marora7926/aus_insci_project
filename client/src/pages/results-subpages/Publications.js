@@ -13,12 +13,10 @@ const styles = {
     },
     button: {
         margin: '15px 55px',
-        // display: 'block',
-        // appearance: 'none',
         background: "beige",
         color: "black",
         border: '1px solid #333',
-        textTransform: 'uppercase',
+        // textTransform: 'uppercase',
         padding: '10px 20px',
         borderRadius: '4px',
     },

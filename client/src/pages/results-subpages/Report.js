@@ -28,7 +28,8 @@ const Report = () => {
         <p>
             <a style={styles.a} 
                 href={NatReport}
-                target="_blank" 
+                target="_blank"
+                rel="noopener noreferrer"
                 title="National Report">
             Access National Report here
             </a>

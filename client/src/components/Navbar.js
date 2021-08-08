@@ -50,7 +50,7 @@ const AppNavbar = () => {
   const [showModal, setShowModal] = useState(false);
   const location = useLocation();
   const parentLink = pageReference[location.pathname];
-  console.log(parentLink)
+
   return (
     <>
       {/* <hr></hr> */}

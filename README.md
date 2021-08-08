@@ -52,13 +52,14 @@ Developed by [Mohit Arora](https://github.com/marora7926)
 
 ## <span style="color:lightgreen">Description of the application</span>
 ```
-Creating a simple, secure and responsive application that allows a users to generate an store passwords for their every registered account.
+Creating a simple, polished, responsive and interactive application that allows a Consumer with Spinal Cord Injury to access important findings of the Aus-InSCI Community Survey
 ```
+
 ## <span style="color:lightgreen">User story</span>
 ``` 
 AS A Australian Consumer with Spinal Cord Injury or other Stakeholder, 
 I WANT TO access important findings of the Aus-InSCI Community Survey that was undertaken in 2018 in Australia as well as ABLE to access all related information and published resources.  
-``` 
+```
 
 ## <span style="color:lightgreen">Acceptance criteria</span>
 ```
@@ -143,36 +144,37 @@ THEN that article is deleted from my saved literature list
 WHEN I click on the Logout button
 THEN I am logged out of the site and land on the home page with Six NAVTABS
 ```
-## <span style="color:lightgreen">Packages</span>
-  * [apollo/client](xx)
-  * [apollo-server-express](xx)
-  * [bcrypt](https://www.npmjs.com/package/bcrypt)
-  * [bootstrap](xx)
-  * [compression](https://www.npmjs.com/package/compression) *- Compression in `Node.js` and `Express` decreases the downloadable amount of data that's served to users.*
-  * [connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize)
-  * [cryptr](https://github.com/MauriceButler/cryptr)
-  * [dotenv](https://www.npmjs.com/package/dotenv)
-  * [express](https://www.npmjs.com/package/express) *- Fast, unopinionated, minimalist web framework for `node`.*
-  * [express](xx)
-  * [express-handlebars](https://www.npmjs.com/package/express-handlebars)
-  * [express-session](https://www.npmjs.com/package/express-session)
-  * [generate-password](https://github.com/brendanashworth/generate-password)
-  * [graphql](xx)
-  * [handlebars](https://www.npmjs.com/package/handlebars)
-  * [jsonwebtoken](xx)
-  * [lite-server](https://www.npmjs.com/package/lite-server) *- Lite-server is a lightweight development `server` that serves a web application, opens it in the browser, and refreshes the page when `HTML or JavaScript` changes are made to the source code.*
-  * [mongoose](https://www.npmjs.com/package/mongoose) *- Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment. *
-  * [mongoose](xx)
-  * [morgan](https://www.npmjs.com/package/morgan) *- HTTP request logger middleware for node.js*
-  * [mysql2](https://www.npmjs.com/package/mysql2)
-  * [react](xx)
-  * [react-bootstrap](xx)
-  * [react-dom](xx)
-  * [react-router-dom](xx)
-  * [react-scripts](xx)
-  * [sequelize](https://www.npmjs.com/package/sequelize)
-  * [shield-io](https://shields.io/) *- for readme file*
 
+## <span style="color:lightgreen">Packages</span>
+  * [apollo/client](https://www.npmjs.com/package/@apollo/client) *- Apollo Client is a fully-featured caching GraphQL client with integrations for React, Angular, and more. It allows you to easily build UI components that fetch data via GraphQL.*
+  * [apollo-server-express](https://www.npmjs.com/package/apollo-server-express) *-This is the Express integration of Apollo Server. Apollo Server is a community-maintained open-source GraphQL server that works with many Node.js HTTP server frameworks.*
+  * [bcrypt](https://www.npmjs.com/package/bcrypt) *-A library to help you hash passwords.*
+  * [bootstrap](https://getbootstrap.com/) *-Design and customize responsive mobile-first sites*
+  * [compression](https://www.npmjs.com/package/compression) *- Compression in `Node.js` and `Express` decreases the downloadable amount of data that's served to users.*
+  * [concurrently](https://www.npmjs.com/package/concurrently) *- Run multiple commands concurrently.*
+  * [dotenv](https://www.npmjs.com/package/dotenv) *-Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env*
+  * [express](https://www.npmjs.com/package/express) *- Fast, unopinionated, minimalist web framework for `node`.*
+  * [graphql](https://www.npmjs.com/package/graphql) *-The JavaScript reference implementation for GraphQL, a query language for APIs created by Facebook.*
+  * [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) *-JWT, or JSON Web Token, is an open standard used to share security information between two parties—a client and a server. Each JWT contains encoded JSON objects, including a set of claims.*
+  * [jwt-decode](https://www.npmjs.com/package/jwt-decode) *-jwt-decode is a small browser library that helps decoding JWTs token which are Base64Url encoded.*
+  * [lite-server](https://www.npmjs.com/package/lite-server) *- Lite-server is a lightweight development `server` that serves a web application, opens it in the browser, and refreshes the page when `HTML or JavaScript` changes are made to the source code.*
+  * [@material-ui/core](https://www.npmjs.com/package/@material-ui/core) *-React components for faster and simpler web development. *
+  * [mongoose](https://www.npmjs.com/package/mongoose) *- Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment. *
+  * [morgan](https://www.npmjs.com/package/morgan) *- HTTP request logger middleware for node.js*
+  * [nanoid](https://www.npmjs.com/package/nanoid) *- tiny, secure, URL-friendly, unique string ID generator for JavaScript.*
+  * [react](https://www.npmjs.com/package/react) *-React is a JavaScript library for creating user interfaces.*
+  * [react-bootstrap](https://www.npmjs.com/package/react-bootstrap) *-Bootstrap 4 components built with React.*
+  * [react-bootstrap-table-next](https://www.npmjs.com/package/react-bootstrap-table-next) *-Next generation of react-bootstrap-table.*
+  * [react-dom](https://www.npmjs.com/package/react-dom) *-This package serves as the entry point to the DOM and server renderers for React. It is intended to be paired with the generic React package, which is shipped as react to npm.*
+  * [react-fast-marquee](https://www.npmjs.com/package/react-fast-marquee) *-React Fast Marquee is a lightweight React component that utilizes the power of CSS animations to create silky smooth marquees.*
+  * [react-hook-form](https://www.npmjs.com/package/react-hook-form) *-React Hook Form will validate the input data against the schema and return with either errors or a valid result.*
+  * [react-marquee-slider](https://www.npmjs.com/package/react-marquee-slider) *-Utilizes the power of CSS animations to create marquees.*
+  * [react-router-dom](https://www.npmjs.com/package/react-router-dom) *-DOM bindings for React Router.*
+  * [react-scripts](https://www.npmjs.com/package/react-scripts) *-This package includes scripts and configuration used by Create React App.*
+  * [react-sizeme](https://www.npmjs.com/package/react-sizeme) *-Make your React Components aware of their width and/or height!*
+  * [shield-io](https://shields.io/) *- for readme file.*
+  * [styled-components](https://www.npmjs.com/package/styled-components) *-Styled Components help keep the concerns of styling and element architecture separated and make components more readable.*
+  * 
 
 ## <span style="color:lightgreen">Future developments</span>
   1. Add a button on the landing page "forgot my password" which will send a temporary password recovery link to user's email.
@@ -201,7 +203,7 @@ THEN I am logged out of the site and land on the home page with Six NAVTABS
 Mohit ARORA
 Email: mohitcoder2021@gmail.com
 GitHub: https://github.com/marora7926
-LinkedIn: 
+LinkedIn: https://www.linkedin.com/in/mohit-arora-098750122/
 ```
 - - -
 © 2021 Bootcamp students. Confidential and Proprietary. All Rights Reserved

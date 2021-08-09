@@ -94,6 +94,7 @@ const HtmlData = () => {
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td style={styles.otherRow}>Female</td>

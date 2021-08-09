@@ -110,7 +110,7 @@ const Translation = () => {
                         </ul>
                     </p>
                 </p>
-                <h3 style={styles.h3}>What is the scope of The Project?</h3>
+                <h3 style={styles.h3}>What is the scope of the translation project?</h3>
                 <p style={styles.p}>
                     Project scope means what will the project cover and what won’t it cover. 
                     If we don’t set The Project scope, it will be much harder to get the project finished on time, 

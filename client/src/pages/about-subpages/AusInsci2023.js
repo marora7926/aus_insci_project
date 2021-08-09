@@ -61,33 +61,25 @@ const AusInsci2023 = () => {
             <div>
                 <h3 style={styles.h3}>What is the project background?</h3>
                 <p style={styles.p}>
-                    Australia participated in a world first InSCI survey that aimed to 
-                    describe the lived experience of people with spinal cord injury (SCI) in Australia. 
-                    There was a need for better information from people with a SCI about the most important 
-                    problems and needs that they had across their lifespan. This forms part of a new global 
-                    ‘learning systems’ initiative to improve the lived experience of people living with SCI
-                    that is linked to implementation of the World Health Organisation (WHO) Global Disability 
-                    Action Plan 2014-2021 Better health for all people with disability. Twenty-two WHO member 
-                    countries participated, which enabled comparison to be made between these countries including 
-                    Australia. The study was affiliated with the World Health Organisation (WHO), the 
-                    International Spinal Cord Society (ISCoS) and the International Society of Physical 
-                    Rehabilitation Medicine (ISPRM). Ultimately, the goal of this research is to identify 
-                    targets for effective interventions at various levels of government policy-making 
+                    Aus-InSCI 2023 will be based on the previous Aus-InSCI Community Survey which was undertaken 
+                    in 2018. The second survey will aim to describe the lived experience of people with spinal 
+                    cord injury (SCI) in Australia. The availability of logitudinal data enable comparisons within 
+                    particpants as well as policty change within Australian states. The study will be a collaborative 
+                    project with the World Health Organisation (WHO), the International Spinal Cord Society (ISCoS) 
+                    and the International Society of Physical Rehabilitation Medicine (ISPRM). Ultimately, the goal of 
+                    the second survey is to further expand on the current understanding of the lived expereicne as well
+                    as to identify targets for effective interventions at various levels of government policy-making 
                     (in relation to evidence and rights), health and service delivery systems and funding 
                     to assist people with SCI realise their potential, to participate in and contribute to society, 
                     and to have a say in their own future.
                 </p>
-                <h3 style={styles.h3}>How was survey undertaken?</h3>
+                <h3 style={styles.h3}>How will the survey be undertaken?</h3>
                 <p style={styles.p}>
-                    The study recruited around 1,579 people with SCI in Australia in 2018-19. 
-                    The study was a collaborative project between New South Wales, Queensland, South Australia 
-                    and Victoria. Each state involves collaboration between State Spinal Cord Injury units/ services, 
-                    not-for-profit member-based SCI associations and Third-Party Insurers/ Lifetime Care and Support 
-                    Agencies. Participation in this study included completing a questionnaire. The Australian Central 
-                    Coordinating Site for the survey was the John Walsh Centre for Rehabilitation Research based at 
-                    the University of Sydney at Sydney, NSW. The Aus-InSCI 2018 Survey was funded by Insurance and 
-                    Care NSW (icare NSW). The international coordinating and research centre was Swiss Paraplegic 
-                    Research in Nottwil, Switzerland.
+                    The study recruited will recruit from various states of Australia. It is intended in 2023-24. The survey 
+                    questionnaires willbe sent to all potential participants by their respective data custodians. Data custodians
+                    State Spinal Cord Injury units/ services, not-for-profit member-based SCI associations and Third-Party Insurers/ Lifetime Care and Support 
+                    Agencies in each Australian States. John Walsh Centre for Rehabilitation Research based at 
+                    the University of Sydney at Sydney, NSW will be the Coordinating Site for the survey.
                 </p>
                 <h3 style={styles.h3}>What the survey will inform?</h3>
                 <p style={styles.p}>
@@ -97,10 +89,7 @@ const AusInsci2023 = () => {
                     best practices and strategies that are working in other countries that we can learn from, explore 
                     for better solutions and adapt to the Australian context. This would provide a baseline for future 
                     comparison within Australia, as well as international benchmarking across level of functioning, 
-                    social and economic participation, and social support. The data may also complement future 
-                    data collection on performance and outcomes by the National Disability Insurance Authority 
-                    and the National Injury Insurance Scheme, as well as other schemes (e.g., for Motor Vehicle 
-                    and Workers Compensation).
+                    social and economic participation, and social support.
                 </p>
             </div>
         </>

@@ -11,19 +11,22 @@ const styles = {
         color: '#1b4332',
     },
     button: {
-        margin: '15px 20px',
-        // display: 'block',
-        // appearance: 'none',
-        background: "beige",
+        margin: '0px 20px',
+        padding: '5px 10px',
+        background: "#B7E4C7",
         color: "black",
         border: '1px solid #333',
-        // textTransform: 'uppercase',
-        padding: '10px 20px',
         borderRadius: '4px',
     },
     p: {
       margin: '15px 20px',
       color: '#343a40',
+    },
+    subp: {
+        margin: '15px 20px',
+        color: '#343a40',
+        fontSize: '14px',
+        fontStyle: 'italic',
     },
 }
 
@@ -38,49 +41,53 @@ const Plain = () => {
             <hr></hr>
             {
                 [{
-                    title: "Employment after spinal cord injury",
-                    authors: "Mohit Arora, James Middleton",
-                    j_name: "Spinal Cord",
-                    year: 2021,
-                    volume: 3,
-                    issue:5,
-                    page: "95-99"
+                    m_title: "Overall results",
+                    title: "Results",
+                    authors: ["Aus-InSCI Team"],
+                    link: "../assets/documents/Results_2018.pdf",
+                    version: 1.0,
+                    date: "10-07-21",
+                    download: "1a_results",
                 },{
-                    title: "Health conditions after spinal cord injury",
-                    authors: "Ian Cameron, Sam Borg",
-                    j_name: "Archives of Physical Medicine",
-                    year: 2020,
-                    volume: 8,
-                    issue: 8,
-                    page: "295-302"
+                    m_title: "Working after spinal cord injury",
+                    title: "Working after SCI",
+                    authors: ['Sam Borg'], //, 'Tim Geraghty', 'Mohit Arora'
+                    link: "../assets/documents/Working_after_SCI.pdf",
+                    version: 1.0,
+                    date: "10-07-21",
+                    download: "2a_results",
                 }].map((article, index) => {
                     return (
                         <>
-                            <h4 style={styles.h4}>{article.title}</h4>
+                            <h4 style={styles.h4}>{article.m_title} {article.authors}</h4>
                             <Button style={styles.button} variant="primary" onClick={() => {handleShowObject('show' + index)}}>
-                                Access full article here
+                                Access pdf here
                             </Button>
                             <Modal show={showObject['show' + index]} onHide={() => {handleCloseObject('show' + index)}}>
                                 <Modal.Header closeButton>
                                     <Modal.Title>{article.title}</Modal.Title>
                                 </Modal.Header>
                                 <Modal.Body>
+                                    <p style={styles.p}><b>Lead author: </b>{article.authors}</p>
+                                    <p style={styles.subp}><b>Version: </b>{article.version}, <b>dated: </b>{article.date}</p>
                                 </Modal.Body>
                                 <Modal.Footer>
-                                <Button variant="secondary" onClick={() => {handleCloseObject('show' + index)}}>
-                                    Close
-                                </Button>
-                                <Button 
-                                    style={styles.button} 
-                                    variant="primary" 
-                                    href="https://www.nature.com/articles/s41393-021-00639-z" 
-                                    target="_blank" 
-                                    onClick={() => {handleCloseObject('show' + index)}}
-                                >
-                                    Access here
-                                </Button>
+                                    <Button variant="secondary" onClick={() => {handleCloseObject('show' + index)}}>
+                                        Close
+                                    </Button>
+                                    <Button 
+                                        style={styles.button}
+                                        href={article.link}
+                                        download={article.download}
+                                        // target="_blank" 
+                                        // rel="noopener noreferrer" 
+                                        onClick={() => {handleCloseObject('show' + index)}}
+                                    >
+                                        Access pdf
+                                    </Button>
                                 </Modal.Footer>
                             </Modal>
+                            <hr></hr>
                         </>
                     )
                 })        

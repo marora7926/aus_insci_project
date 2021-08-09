@@ -11,7 +11,7 @@ const styles = {
         color: '#1b4332',
     },
     button: {
-        margin: '0px 20px',
+        margin: '0px 50px',
         padding: '5px 10px',
         background: "#B7E4C7",
         color: "black",
@@ -41,6 +41,7 @@ const Plain = () => {
             <hr></hr>
             {
                 [{
+                    id: 1,
                     m_title: "Overall results",
                     title: "Results",
                     authors: ["Aus-InSCI Team"],
@@ -49,6 +50,7 @@ const Plain = () => {
                     date: "10-07-21",
                     download: "1a_results",
                 },{
+                    id: 2,
                     m_title: "Working after spinal cord injury",
                     title: "Working after SCI",
                     authors: ['Sam Borg'], //, 'Tim Geraghty', 'Mohit Arora'
@@ -59,7 +61,7 @@ const Plain = () => {
                 }].map((article, index) => {
                     return (
                         <>
-                            <h4 style={styles.h4}>{article.m_title} {article.authors}</h4>
+                            <h4 style={styles.h4}>{article.id}. {article.m_title} <i>(Lead author: {article.authors} et al)</i></h4>
                             <Button style={styles.button} variant="primary" onClick={() => {handleShowObject('show' + index)}}>
                                 Access pdf here
                             </Button>

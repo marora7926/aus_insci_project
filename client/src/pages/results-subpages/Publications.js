@@ -11,7 +11,7 @@ const styles = {
         color: '#1b4332',
     },
     button: {
-        margin: '0px 20px',
+        margin: '0px 50px',
         padding: '5px 10px',
         background: "#B7E4C7",
         color: "black",
@@ -41,12 +41,14 @@ const Publications = () => {
             <hr></hr>
             {
                 [{
+                    id: 1,
                     m_title: "Employment after spinal cord injury",
                     title: "Employment outcomes following spinal cord injury: a population-based cross-sectional study in Australia",
                     authors: "Sam Borg",
                     citation: "Borg SJ, Geraghty T, Arora M, Foster M, Marshall R, Nunn A, Middleton JW. Employment outcomes following spinal cord injury: a population-based cross-sectional study in Australia. Spinal Cord. 2021 May 17. doi: 10.1038/s41393-021-00639-z. Epub ahead of print. PMID: 34002015.",
                     link: "https://pubmed.ncbi.nlm.nih.gov/34002015/",
                 },{
+                    id: 2,
                     m_title: "Health conditions after spinal cord injury",
                     title: "Health conditions after SCI",
                     authors: "Mohit Arora",
@@ -55,7 +57,7 @@ const Publications = () => {
                 }].map((article, index) => {
                     return (
                         <>
-                            <h4 style={styles.h4}>{article.m_title}</h4>
+                            <h4 style={styles.h4}>{article.id}. {article.m_title} <i>(Lead author: {article.authors} et al)</i></h4>
                             <Button style={styles.button} variant="primary" onClick={() => {handleShowObject('show' + index)}}>
                                 Access full article here
                             </Button>

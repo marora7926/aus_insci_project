@@ -8,6 +8,8 @@ import WCAndSky from '../assets/wc_sky.jpg'
 const styles = {
     img: {
         marginBottom: '25px',
+        display: 'block',
+        width: 500,
     },
     h2: {
         margin: '5px 20px',
@@ -30,7 +32,7 @@ const AusInsci2018 = () => {
                 <Carousel.Item interval={2000}>
                     <img 
                     style={styles.img}
-                    className="d-block w-100"
+                    // className="d-block w-100"
                     src={ManOnWC}
                     alt="First slide"
                     />
@@ -38,7 +40,7 @@ const AusInsci2018 = () => {
                 <Carousel.Item interval={2000}>
                     <img
                     style={styles.img}
-                    className="d-block w-100"
+                    // className="d-block w-100"
                     src={WCAndBicycle}
                     alt="Second slide"
                     />
@@ -46,7 +48,7 @@ const AusInsci2018 = () => {
                 <Carousel.Item interval={2000}>
                     <img
                     style={styles.img}
-                    className="d-block w-100"
+                    // className="d-block w-100"
                     src={WCAndSky}
                     alt="Third slide"
                     />

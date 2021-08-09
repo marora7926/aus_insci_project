@@ -21,7 +21,7 @@ const HtmlData = () => {
         <hr></hr>
             <Container>
             <a style={styles.a} 
-                href="./assets/AustraliaData.html"
+                href="/AustraliaData.html"
                 target="_blank">
               Access results here
             </a>

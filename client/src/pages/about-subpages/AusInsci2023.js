@@ -7,13 +7,9 @@ import WCAndSky from '../assets/wc_sky.jpg'
 
 const styles = {
     img: {
-        height: '300px',
-        width: '100%',
-        margin: '10px 20px',
         marginBottom: '25px',
-        backgroundImage: './wc_bicycle.jpg',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        display: 'block',
+        width: 500,
     },
     h2: {
         margin: '5px 20px',
@@ -36,7 +32,7 @@ const AusInsci2023 = () => {
                 <Carousel.Item interval={2000}>
                     <img 
                     style={styles.img}
-                    className="d-block w-100"
+                    // className="d-block w-100"
                     src={ManOnWC}
                     alt="First slide"
                     />
@@ -44,7 +40,7 @@ const AusInsci2023 = () => {
                 <Carousel.Item interval={2000}>
                     <img
                     style={styles.img}
-                    className="d-block w-100"
+                    // className="d-block w-100"
                     src={WCAndBicycle}
                     alt="Second slide"
                     />
@@ -52,7 +48,7 @@ const AusInsci2023 = () => {
                 <Carousel.Item interval={2000}>
                     <img
                     style={styles.img}
-                    className="d-block w-100"
+                    // className="d-block w-100"
                     src={WCAndSky}
                     alt="Third slide"
                     />

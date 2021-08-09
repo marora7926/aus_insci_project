@@ -1,15 +1,18 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap'; 
+import { Carousel, Container } from 'react-bootstrap'; 
 
 import ManOnWC from '../assets/man_wc.jpg'
 import WCAndBicycle from '../assets/wc_bicycle.jpg'
 import WCAndSky from '../assets/wc_sky.jpg'
 
 const styles = {
+    container: {
+        maxWidth: '600px',
+    },
     img: {
-        marginBottom: '25px',
+        margin: '25px',
         display: 'block',
-        width: 500,
+        width: 600,
     },
     h2: {
         margin: '5px 20px',
@@ -28,8 +31,9 @@ const styles = {
 const AusInsci2018 = () => {
     return (
         <>
+            <Container style={styles.container}>
             <Carousel variant="dark">
-                <Carousel.Item interval={2000}>
+                <Carousel.Item interval={2500}>
                     <img 
                     style={styles.img}
                     // className="d-block w-100"
@@ -37,7 +41,7 @@ const AusInsci2018 = () => {
                     alt="First slide"
                     />
                 </Carousel.Item>
-                <Carousel.Item interval={2000}>
+                <Carousel.Item interval={2500}>
                     <img
                     style={styles.img}
                     // className="d-block w-100"
@@ -45,7 +49,7 @@ const AusInsci2018 = () => {
                     alt="Second slide"
                     />
                 </Carousel.Item>
-                <Carousel.Item interval={2000}>
+                <Carousel.Item interval={2500}>
                     <img
                     style={styles.img}
                     // className="d-block w-100"
@@ -58,6 +62,7 @@ const AusInsci2018 = () => {
                     </Carousel.Caption> */}
                 </Carousel.Item>
             </Carousel>
+            </Container>
             <h2 style={styles.h2}>What is the Aus-InSCI 2018 Community Survey?</h2>
             <div>
                 <h3 style={styles.h3}>What is the project background?</h3>

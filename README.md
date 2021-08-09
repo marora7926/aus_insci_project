@@ -176,6 +176,12 @@ THEN I am logged out of the site and land on the home page with Six NAVTABS
   * [styled-components](https://www.npmjs.com/package/styled-components) *-Styled Components help keep the concerns of styling and element architecture separated and make components more readable.*
   * 
 
+## <span style="color:lightgreen">Hooks</span>
+  * [useState]() *-*
+  * [useEffect]() *-*
+  * [useForm]() *-*
+  * [useLocation]() *-*  
+
 ## <span style="color:lightgreen">Future developments</span>
   1. Add a button on the landing page "forgot my password" which will send a temporary password recovery link to user's email.
   2. App will notify the user that password has not been changed for more than 6 months. 

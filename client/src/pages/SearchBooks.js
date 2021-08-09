@@ -8,7 +8,6 @@ import { ADD_BOOK } from '../utils/mutations';
 const styles = {
   h1: {
     // fontWeight: 100,
-    
     color: 'white',
     textAlign: 'center',
     paddingBottom: '10px',
@@ -20,7 +19,7 @@ const styles = {
     appearance: 'none',
     margin: '40px 0px 20px',
     border: '1px solid #333',
-    textTransform: 'uppercase',
+    // textTransform: 'uppercase',
     padding: '10px 20px',
     borderRadius: '4px',
   },

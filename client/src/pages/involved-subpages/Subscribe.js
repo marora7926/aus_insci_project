@@ -3,13 +3,35 @@ import { useForm } from 'react-hook-form';
 
 import "./involved.css";
 
+const styles = {
+  form: {
+    // background: '#0e101c',
+    maxWidth: '500px',
+    margin: '0 auto',
+  },
+  button: {
+    display: 'block',
+    appearance: 'none',
+    marginTop: '40px',
+    marginBottom: '20px',
+    padding: '10px 20px',
+    border: '1px solid #333',
+    borderRadius: '4px',
+    background: '#ffccd5',
+    color: '#800f2f',
+    fontSize: '16px',
+    fontWeight: 100,
+  },
+}
+
+
 export default function Subscribe() {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = data => console.log(data);
   console.log(errors);
   return (
     <div>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form style={styles.form} onSubmit={handleSubmit(onSubmit)}>
         <h2>Subscribe for Future Research</h2>
         <hr></hr>
         <select {...register("Title", { required: true })}>
@@ -27,7 +49,7 @@ export default function Subscribe() {
         <hr></hr>
         <textarea placeholder="Optional: leave a note" {...register("Message")} />
         <hr></hr>
-        <input type="submit" />
+        <input style={styles.button} type="submit" />
       </form>
     </div>
   );

@@ -4,6 +4,10 @@ import { useForm } from 'react-hook-form';
 import "./involved.css";
 
 const styles = {
+  h3:{
+    margin: '15px 0px',
+    color: '#800f2f',
+  },
   form: {
     // background: '#0e101c',
     maxWidth: '500px',
@@ -32,7 +36,7 @@ export default function Subscribe() {
   return (
     <div>
       <form style={styles.form} onSubmit={handleSubmit(onSubmit)}>
-        <h2>Subscribe for Future Research</h2>
+        <h3 style={styles.h3}>Subscribe for Future Research</h3>
         <hr></hr>
         <select {...register("Title", { required: true })}>
           <option value="Mr">Mr</option>

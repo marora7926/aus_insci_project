@@ -27,6 +27,7 @@ const styles = {
     marginLeft: '120px',
     listStyleType: 'none',
     font: '30px',
+  fontStyle: 'italic',
   },
   navbar: {
     height: '45px',
@@ -56,7 +57,7 @@ const AppNavbar = () => {
       {/* <hr></hr> */}
       <Marquee style={styles.marquee}>
         <ul style={styles.ul}>
-          <li style={styles.li}>The next Aus-InSCI Survey will be rolled out in January 2023.</li>
+          <li style={styles.li}>The next Aus-InSCI Survey will be implemented in January 2023.</li>
           <li style={styles.li}>For viewing Australian results in details, please Login or Register.</li>
           <li style={styles.li}>New: Lay summary for the employment paper has been added under results.</li>
         </ul>
@@ -103,14 +104,6 @@ const AppNavbar = () => {
               >
                 Search Literature
               </Nav.Link>
-              <Nav.Link 
-                as={Link} to='/htmldata' 
-                style={styles.navLink}
-                className={(location.pathname === '/htmldata' || parentLink === '/htmldata') ? 'nav-link active' : 'none'}
-              >
-                Descripitve Analysis
-              </Nav.Link>
-              {/* if user is logged in show saved books and logout */}
               {Auth.loggedIn() ? (
                 <>
                   <Nav.Link 
@@ -119,6 +112,13 @@ const AppNavbar = () => {
                     className={(location.pathname === '/saved' || parentLink === '/saved') ? 'nav-link active' : 'none'}
                   >
                     Saved documents
+                  </Nav.Link>
+                  <Nav.Link 
+                    as={Link} to='/htmldata' 
+                    style={styles.navLink}
+                    className={(location.pathname === '/htmldata' || parentLink === '/htmldata') ? 'nav-link active' : 'none'}
+                  >
+                    Descripitve Analysis
                   </Nav.Link>
                   <Nav.Link 
                     onClick={Auth.logout} 

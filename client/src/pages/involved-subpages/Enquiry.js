@@ -4,6 +4,10 @@ import { useForm } from 'react-hook-form';
 import "./involved.css";
 
 const styles = {
+  h3:{
+    margin: '15px 0px',
+    color: '#800f2f',
+  },
   form: {
     // background: '#0e101c',
     maxWidth: '500px',
@@ -34,7 +38,7 @@ export default function Enquiry() {
   return (
     <div>
         <form style={styles.form} onSubmit={handleSubmit(onSubmit)}>
-            <h2>General Enquiry Form</h2>
+            <h3 style={styles.h3}>General Enquiry Form</h3>
             <hr></hr>
             <select {...register("Title", { required: true })}>
                 <option value="Mr">Mr</option>

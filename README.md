@@ -19,12 +19,12 @@
     <img src="https://img.shields.io/badge/css-blue" />
     <img src="https://img.shields.io/badge/Javascript-yellow" />
     <img src="https://img.shields.io/badge/express-orange" />
-    <img src="https://img.shields.io/badge/Sequelize-9cf"  />
-    <img src="https://img.shields.io/badge/mySQL-yellowgreen"  />
+    <img src="https://img.shields.io/badge/graphql-9cf"  />
+    <img src="https://img.shields.io/badge/mongoose-yellowgreen"  />
     <img src="https://img.shields.io/badge/dotenv-green" />
     <img src="https://img.shields.io/badge/bcrypt-critical" />
-    <img src="https://img.shields.io/badge/cryptr-ff69b4" />
-    <img src="https://img.shields.io/badge/handlerbars-orange" />
+    <img src="https://img.shields.io/badge/react-ff69b4" />
+    <img src="https://img.shields.io/badge/jwt-orange" />
     <img src="https://img.shields.io/badge/shield.io-brightgreen" />   
 </p>
 
@@ -72,6 +72,8 @@ EVERYTIME I click the title of the app in the header section, I land on the home
 
 IN THE NAVBAR section, I AM presented with a MARQUEE with latest news as well as six NAVTABS
 WHEN I click on any NAVTAB, it gets in active more and AS A user, I am able to see this.
+
+IN THE FOOTER section, I am presented with the project social media links as well as a link to download acknowledgements, ethics statement, privacy and disclaimer document.
 
 WHEN I click the FIRST NAVTAB, which is about Aus-InSCI Project
 THEN I presented with THREE Sub-components NAVTABS, namely Aus-InSCI 2018, Aus-InSCI 2023 and Translation Project
@@ -145,7 +147,7 @@ WHEN I click on the Logout button
 THEN I am logged out of the site and land on the home page with Six NAVTABS
 ```
 
-## <span style="color:lightgreen">Packages</span>
+## <span style="color:lightgreen">Packages used</span>
   * [apollo/client](https://www.npmjs.com/package/@apollo/client) *- Apollo Client is a fully-featured caching GraphQL client with integrations for React, Angular, and more. It allows you to easily build UI components that fetch data via GraphQL.*
   * [apollo-server-express](https://www.npmjs.com/package/apollo-server-express) *-This is the Express integration of Apollo Server. Apollo Server is a community-maintained open-source GraphQL server that works with many Node.js HTTP server frameworks.*
   * [bcrypt](https://www.npmjs.com/package/bcrypt) *-A library to help you hash passwords.*
@@ -154,13 +156,12 @@ THEN I am logged out of the site and land on the home page with Six NAVTABS
   * [concurrently](https://www.npmjs.com/package/concurrently) *- Run multiple commands concurrently.*
   * [dotenv](https://www.npmjs.com/package/dotenv) *-Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env*
   * [express](https://www.npmjs.com/package/express) *- Fast, unopinionated, minimalist web framework for `node`.*
-  * [graphql](https://www.npmjs.com/package/graphql) *-The JavaScript reference implementation for GraphQL, a query language for APIs created by Facebook.*
+  * [graphql](https://www.npmjs.com/package/graphql) *-The JavaScript reference implementation for GraphQL, a query language for APIs.*
   * [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) *-JWT, or JSON Web Token, is an open standard used to share security information between two parties—a client and a server. Each JWT contains encoded JSON objects, including a set of claims.*
   * [jwt-decode](https://www.npmjs.com/package/jwt-decode) *-jwt-decode is a small browser library that helps decoding JWTs token which are Base64Url encoded.*
   * [lite-server](https://www.npmjs.com/package/lite-server) *- Lite-server is a lightweight development `server` that serves a web application, opens it in the browser, and refreshes the page when `HTML or JavaScript` changes are made to the source code.*
   * [@material-ui/core](https://www.npmjs.com/package/@material-ui/core) *-React components for faster and simpler web development. *
   * [mongoose](https://www.npmjs.com/package/mongoose) *- Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment. *
-  * [morgan](https://www.npmjs.com/package/morgan) *- HTTP request logger middleware for node.js*
   * [nanoid](https://www.npmjs.com/package/nanoid) *- tiny, secure, URL-friendly, unique string ID generator for JavaScript.*
   * [react](https://www.npmjs.com/package/react) *-React is a JavaScript library for creating user interfaces.*
   * [react-bootstrap](https://www.npmjs.com/package/react-bootstrap) *-Bootstrap 4 components built with React.*
@@ -174,23 +175,26 @@ THEN I am logged out of the site and land on the home page with Six NAVTABS
   * [react-sizeme](https://www.npmjs.com/package/react-sizeme) *-Make your React Components aware of their width and/or height!*
   * [shield-io](https://shields.io/) *- for readme file.*
   * [styled-components](https://www.npmjs.com/package/styled-components) *-Styled Components help keep the concerns of styling and element architecture separated and make components more readable.*
-  * 
 
-## <span style="color:lightgreen">Hooks</span>
-  * [useState]() *-*
-  * [useEffect]() *-*
-  * [useForm]() *-*
-  * [useLocation]() *-*  
+## <span style="color:lightgreen">Hooks used</span>
+  * [useEffect](https://reactjs.org/docs/hooks-effect.html) *- tell React that your component needs to do something after render.*
+  * [useForm](https://react-hook-form.com/api/useform/) *-useForm is custom hook for managing forms with ease.*
+  * [useLocation](https://reactrouter.com/web/api/Hooks/uselocation) *-The useLocation hook returns the location object that represents the current URL*
+  * [useMutation](https://www.apollographql.com/docs/react/data/mutations/) *-The useMutation React hook is the primary API for executing mutations in an Apollo application.*  
+  * [useQuery](https://www.apollographql.com/docs/react/data/queries/) *-The useQuery React hook is the primary API for executing queries in an Apollo application*  
+  * [useState](https://www.npmjs.com/package/usestate) *-usestate gives the webcomponents a new life cycle.*
+
 
 ## <span style="color:lightgreen">Future developments</span>
-  1. Add a button on the landing page "forgot my password" which will send a temporary password recovery link to user's email.
-  2. App will notify the user that password has not been changed for more than 6 months. 
-  3. Automatic notification will be sent to users registered email.
-  4. Users inputs will be validated.
-  5. Allow user to search a password on the dashboard.
-  6. Finding a more secure way to encrypting the database.
-  7. Add a reveal icon to display the password.
-  8. URL click will direct to the website and auto-fill username and password.
+  1. Collect data from forms and save to mongoose atlas
+  2. Use inquirer to enter new data from back end.
+  3. Have a donate feature and implement a payment gateway for this. 
+  4. Global CSS styling.
+  5. Users inputs will be validated.
+  6. Allow user to search a password on the dashboard.
+  7. Finding a more secure way to encrypting the database.
+  8. Add a reveal icon to display the password.
+  9. URL click will direct to the website and auto-fill username and password.
 
 ## <span style="color:lightgreen">Presentation link</span>
 [👋 Aus-InSCI Project Presentation 👋](https://cloudstor.aarnet.edu.au/plus/s/xxx)
@@ -199,10 +203,13 @@ THEN I am logged out of the site and land on the home page with Six NAVTABS
 ![Screenshot-wireframe](./public/images/wireframe.png)
 
 ## <span style="color:lightgreen">Screenshot - Landing page</span>
-![Screenshot-landing-page](./public/images/landing-page.png)
+![Screenshot-landing-page](./client/src/assets/images/images/Landing-page.png)
 
-## <span style="color:lightgreen">App functionality GIF</span>
-![Screenshot-app-gif](./public/images/app-gif.xxx)
+## <span style="color:lightgreen">Screenshot - Research Partners page</span>
+![Screenshot-Research-Partners-page](./client/src/assets/images/images/partners-page.png)
+
+## <span style="color:lightgreen">Screenshot - Get Invovled page</span>
+![Screenshot-Get-Invovled-page](./client/src/assets/images/images/get-invovled-page.png)
 
 ## <span style="color:lightgreen">App Developer</span>
 ```

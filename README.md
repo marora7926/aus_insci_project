@@ -28,6 +28,11 @@
     <img src="https://img.shields.io/badge/shield.io-brightgreen" />   
 </p>
 
+## <span style="color:lightgreen">Description of the application</span>
+```
+Creating a simple, polished, responsive and interactive application that allows a Consumer with Spinal Cord Injury to access important findings of the Aus-InSCI Community Survey
+```
+
 ## <span style="color:lightgreen">Access deployed and repo link</span>
 
 - [🎥 Aus-InSCI Project Website  🎥](https://aus-insci-project.herokuapp.com/)
@@ -35,25 +40,24 @@
 
 Developed by [Mohit Arora](https://github.com/marora7926)
 
+## <span style="color:lightgreen">Presentation link</span>
+[👋 Aus-InSCI Project Presentation 👋](https://cloudstor.aarnet.edu.au/plus/s/xxx)
+
 ## <span style="color:lightgreen">Table of contents</span>
 
-  - [<span style="color:lightgreen">Access deployed and repo link</span>](#access-deployed-and-repo-link)
-  - [<span style="color:lightgreen">Table of contents</span>](#table-of-contents)
   - [<span style="color:lightgreen">Description of the application</span>](#description-of-the-application)
+  - [<span style="color:lightgreen">Access deployed and repo link</span>](#access-deployed-and-repo-link)
+  - [<span style="color:lightgreen">Presentation link</span>](#presentation-link)
+  - [<span style="color:lightgreen">Table of contents</span>](#table-of-contents)
   - [<span style="color:lightgreen">User story</span>](#user-story)
   - [<span style="color:lightgreen">Acceptance criteria</span>](#acceptance-criteria)
-  - [<span style="color:lightgreen">Packages</span>](#packages)
+  - [<span style="color:lightgreen">Packages used</span>](#packages-used)
+  - [<span style="color:lightgreen">Hooks used</span>](#hooks-used)
   - [<span style="color:lightgreen">Future developments</span>](#future-developments)
-  - [<span style="color:lightgreen">Presentation link</span>](#presentation-link)
-  - [<span style="color:lightgreen">Wireframe</span>](#wireframe)
-  - [<span style="color:lightgreen">Screenshot - Landing page</span>](#screenshot---landing-page)
-  - [<span style="color:lightgreen">App functionality GIF</span>](#app-functionality-gif)
+  - [<span style="color:lightgreen">Screenshot - Landing page</span>](#screenshot-landing-page)
+  - [<span style="color:lightgreen">Screenshot - Partners page</span>](#screenshot-partners-page)
+  - [<span style="color:lightgreen">Screenshot - Get Invovled page</span>](#screenshot-get-involved-page)
   - [<span style="color:lightgreen">App Developer</span>](#app-developer)
-
-## <span style="color:lightgreen">Description of the application</span>
-```
-Creating a simple, polished, responsive and interactive application that allows a Consumer with Spinal Cord Injury to access important findings of the Aus-InSCI Community Survey
-```
 
 ## <span style="color:lightgreen">User story</span>
 ``` 
@@ -99,7 +103,7 @@ THEN I presented with THREE Sub-components NAVTABS, namely Plain Language Docume
   THEN I AM presented with link to access plain language result of the Aus-InSCI survey for consumers
 
   WHEN I click the National Report Sub-components NAVTABS
-  THEN I AM presented with the summary as well as link to access the Australian National Report of the Aus-InSCI survey
+  THEN I AM presented with the summary as well as link to access the National Report
 
   WHEN I click the Scientific Publication Sub-components NAVTABS
   THEN I AM presented a list of published national and international articles as well as the link to access these
@@ -196,20 +200,14 @@ THEN I am logged out of the site and land on the home page with Six NAVTABS
   8. Add a reveal icon to display the password.
   9. URL click will direct to the website and auto-fill username and password.
 
-## <span style="color:lightgreen">Presentation link</span>
-[👋 Aus-InSCI Project Presentation 👋](https://cloudstor.aarnet.edu.au/plus/s/xxx)
-
-## <span style="color:lightgreen">Wireframe</span>
-![Screenshot-wireframe](./public/images/wireframe.png)
-
-## <span style="color:lightgreen">Screenshot - Landing page</span>
+## <span style="color:lightgreen">Screenshot Landing page</span>
 ![Screenshot-landing-page](./client/src/assets/images/images/Landing-page.png)
 
-## <span style="color:lightgreen">Screenshot - Research Partners page</span>
-![Screenshot-Research-Partners-page](./client/src/assets/images/images/partners-page.png)
+## <span style="color:lightgreen">Screenshot Research Partners page</span>
+![Screenshot-partners-page](./client/src/assets/images/images/partners-page.png)
 
-## <span style="color:lightgreen">Screenshot - Get Invovled page</span>
-![Screenshot-Get-Invovled-page](./client/src/assets/images/images/get-invovled-page.png)
+## <span style="color:lightgreen">Screenshot Get Involved page</span>
+![Screenshot-get-involved-page](./client/src/assets/images/images/get-involved-page.png)
 
 ## <span style="color:lightgreen">App Developer</span>
 ```
@@ -220,113 +218,3 @@ LinkedIn: https://www.linkedin.com/in/mohit-arora-098750122/
 ```
 - - -
 © 2021 Bootcamp students. Confidential and Proprietary. All Rights Reserved
-
-
-23 Final Project: MERN Stack Single-Page Application
-
-Projects have played a key role in your journey to becoming a full-stack web developer. As you apply for development jobs, your portfolio is absolutely vital to opening doors to opportunities. Your portfolio showcases high-quality deployed examples of your work, and you can use your finished projects for that very purpose.
-
-This project is a fantastic opportunity to show employers your skills and coding abilities, especially in the context of a scalable, user-focused MERN app. Remember that employers want to see what you can do, but they also want to see how you work with other developers. The more examples of deployed work you have in your portfolio, the more likely you are to get an interview and a job.
-
-
-Project Requirements
-
-You will use everything you have learned throughout this course to create a MERN stack single-page application that works with real-world data to solve a real-world challenge, with a focus on data and user demand. This project will provide you with the best opportunity to demonstrate your problem-solving skills, which employers will want to see during interviews. Once again, the user story and acceptance criteria will depend on the project that you create, but your project must fulfill the following requirements:
-
-* Use React for the front end.
-* Use Node.js and Express.js server.
-* Use MongoDB and the Mongoose ODM for the database.
-* Be deployed using Heroku (with data).
-* Have a polished UI.
-* Be responsive.
-* Be interactive (i.e., accept and respond to user input).
-* Include authentication.
-* Protect sensitive API key information on the server.
-* Have a clean repository that meets quality coding standards (file structure, naming conventions, best practices for class and id naming conventions, indentation, high-quality comments, etc.).
-* Have a high-quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
-
-
-CSS Styling
-
-Instead of using a CSS library like Bootstrap, consider one of the following suggestions:
-
-* Look into the concept of CSS-in-JS, which abstracts CSS to the component level, using JavaScript to describe styles in a declarative and maintainable way. Some popular libraries include [styled-components](https://styled-components.com/) and [Emotion](https://emotion.sh/docs/introduction).
-* Try using a component library, such as [Semantic UI](https://semantic-ui.com/), [Chakra UI](https://chakra-ui.com/), or [Ant Design](https://ant.design/).
-* Create all the CSS for your application just using CSS.
-
-Ultimately, it doesn't matter which of these options you choose&mdash;it just needs to look professional and be mobile-friendly.
-
-
-Bonus
-
-* Uses GraphQL queries and mutations for retrieving, adding, updating, and deleting data.
-* Uses JWT for authentication
-
-Although this is not a requirement for your project, see if you can also implement functionality to meet the minimum requirements of a PWA:
-
-* Uses a web manifest
-* Uses a service worker for offline functionality
-* Is installable
-
-
-Presentation Requirements
-
-Use this [project presentation template](https://docs.google.com/presentation/d/10QaO9KH8HtUXj__81ve0SZcpO5DbMbqqQr4iPpbwKks/edit?usp=sharing) to address the following:
-
-* Elevator pitch: a one minute description of your application
-* Concept: What is your user story? What was your motivation for development?
-* Process: What were the technologies used? How were tasks and roles broken down and assigned? What challenges did you encounter? What were your successes?
-* Demo: Show your stuff!
-* Directions for Future Development
-* Links to the deployed application and the GitHub repository. Use the [Guide to Deploy with Heroku and MongoDB Atlas](https://coding-boot-camp.github.io/full-stack/mongodb/deploy-with-heroku-and-mongodb-atlas) on The Full-Stack Blog if you need a reminder on how to deploy to Heroku.
-
-
-Grading Requirements
-This project is graded based on the following criteria:
-
-Technical Acceptance Criteria: 25%
-* Satisfies the following code requirements:
-  * Application uses React for the front end.
-  * Application has a GraphQL API with a Node.js and Express.js server, and uses queries and mutations for retrieving, adding, updating, and deleting data.
-  * Application uses MongoDB and the Mongoose ODM for the database and protects sensitive API key information on the server.
-  * Application includes user authentication using JWT.
-
-Concept 10%
-* Application should be a unique and novel idea.
-* You should clearly and concisely articulate your project idea.
-
-Deployment: 20%
-* Application deployed at live URL on Heroku and loads with no errors.
-* Application GitHub URL submitted.
-
-Repository Quality: 10%
-* Repository has a unique name.
-* Repository follows best practices for file structure and naming conventions.
-* Repository follows best practices for class and id naming conventions, indentation, quality comments, etc.
-* Repository contains multiple descriptive commit messages.
-* Repository contains a high-quality README file with description, screenshot, and link to deployed application.
-
-
-Application Quality: 15%
-* Application user experience is intuitive and easy to navigate.
-* Application user interface style is clean and polished.
-* Application is responsive.
-
-
-Presentation 20%
-* You should present using Google Slides, Powerpoint, or a similar presentation software.
-* Your presentation should follow the [Project Presentation Template](https://docs.google.com/presentation/d/10QaO9KH8HtUXj__81ve0SZcpO5DbMbqqQr4iPpbwKks/edit?usp=sharing).
-
-
-
-Bonus
-Fulfilling all three of the following requirements to turn your app into a PWA will add 10 points to your grade. Note that the highest grade you can achieve is still a 100:
-* Uses a web manifest
-* Uses a service worker for offline functionality
-* Is installable
-
-
-How to Submit Your MERN Stack Single-Page Application
-You are required to submit the following for review:
-* The URL of the deployed application.
-* The URL of the GitHub repository, with a unique name and a README describing the project.

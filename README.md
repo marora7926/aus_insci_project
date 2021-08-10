@@ -201,7 +201,7 @@ THEN I am logged out of the site and land on the home page with Six NAVTABS
   9. URL click will direct to the website and auto-fill username and password.
 
 ## <span style="color:lightgreen">Screenshot Landing page</span>
-![Screenshot-landing-page](./client/src/assets/images/images/Landing-page.png)
+![Screenshot-landing-page](./client/src/assets/images/images/landing-page.png)
 
 ## <span style="color:lightgreen">Screenshot Research Partners page</span>
 ![Screenshot-partners-page](./client/src/assets/images/images/partners-page.png)

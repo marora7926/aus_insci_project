@@ -115,7 +115,7 @@ const AppNavbar = () => {
                     style={styles.navLinkLogIn}
                     className={(location.pathname === '/saved' || parentLink === '/saved') ? 'nav-link active' : 'none'}
                   >
-                    Saved documents
+                    Saved Literature
                   </Nav.Link>
                   <Nav.Link 
                     as={Link} to='/htmldata' 

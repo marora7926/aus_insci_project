@@ -82,15 +82,15 @@ IN THE FOOTER section, I am presented with the project social media links as wel
 WHEN I click the FIRST NAVTAB, which is about Aus-InSCI Project
 THEN I presented with THREE Sub-components NAVTABS, namely Aus-InSCI 2018, Aus-InSCI 2023 and Translation Project
 WHEN I click any of the Sub-components NAVTABS
-I AM presented with information realed to Aus-InSCI 2018, Aus-InSCI 2023 and Translation Project, respectively 
+I AM presented with information related to Aus-InSCI 2018, Aus-InSCI 2023 and Translation Project, respectively 
 
-WHEN I click the SECOND NAVTAB, which is about Reseach Partners,
+WHEN I click the SECOND NAVTAB, which is about Research Partners,
 THEN I presented with THREE Sub-components NAVTABS, namely Research Team, Advisory Committees and Partner Organisations.
 
   WHEN I click the Research Team Sub-components NAVTABS
   THEN I AM presented with a short portfolio for each member of the research team from the four participating Australian states
 
-  WHEN I click the Advisory Commitees Sub-components NAVTABS
+  WHEN I click the Advisory Committees Sub-components NAVTABS
   THEN I AM presented with membership list of each of the working committees
 
   WHEN I click the Partner Organisation Sub-components NAVTABS
@@ -110,9 +110,9 @@ THEN I presented with THREE Sub-components NAVTABS, namely Plain Language Docume
   
 WHEN I click the FOURTH NAVTAB, which is about Get-Involved
 THEN I presented with THREE Sub-components NAVTABS, namely
-  Subscribe - for subcribing for future research
-  Feedback Form - for provinding feedback on result or website, and 
-  Enquiry Form - for contact the study centre for an general query
+  Subscribe - for subscribing for future research
+  Feedback Form - for providing feedback on result or website, and 
+  Enquiry Form - for contacting the study centre for a general query
 
 WHEN I click the FIFTH NAVTAB, which is about Search Literature using Web-API
 THEN I am presented with an input field to search for literature and a submit button
@@ -125,7 +125,7 @@ THEN a modal appears on the screen with a toggle between the option to login or 
 WHEN the toggle is set to REGISTER
 THEN I am presented with three inputs for a username, an email address, and a password, and a signup button
 WHEN I enter a valid email address and create a password and click on the signup button
-THEN my user account is created and I am logged in to the site
+THEN my user account is created, and I am logged in to the site
 
 WHEN the toggle is set to LOGIN
 THEN I am presented with two inputs for an email address and a password and login button
@@ -142,9 +142,9 @@ WHEN I am logged in and enter a search term in the input field and click the sub
 THEN this time I will be presented with articles' details as well as a button to save my search to my account
 WHEN I click on the Save button on a search article
 THEN that article's information is saved to my account
-WHEN I click on the option to see my saved Saved Literature
+WHEN I click on the option to see my saved literature
 THEN I am presented with articles' details as well as a button to remove a book from my account
-WHEN I click on the Remove Article on a article
+WHEN I click on the Remove Article on an article
 THEN that article is deleted from my saved literature list
 
 WHEN I click on the Logout button
@@ -152,7 +152,7 @@ THEN I am logged out of the site and land on the home page with Six NAVTABS
 ```
 
 ## <span style="color:lightgreen">Packages used</span>
-  * [apollo/client](https://www.npmjs.com/package/@apollo/client) *- Apollo Client is a fully-featured caching GraphQL client with integrations for React, Angular, and more. It allows you to easily build UI components that fetch data via GraphQL.*
+  * [apollo/client](https://www.npmjs.com/package/@apollo/client) *- Apollo Client is a fully-featured caching GraphQL client with integrations for React, and more. It allows you to easily build UI components that fetch data via GraphQL.*
   * [apollo-server-express](https://www.npmjs.com/package/apollo-server-express) *-This is the Express integration of Apollo Server. Apollo Server is a community-maintained open-source GraphQL server that works with many Node.js HTTP server frameworks.*
   * [bcrypt](https://www.npmjs.com/package/bcrypt) *-A library to help you hash passwords.*
   * [bootstrap](https://getbootstrap.com/) *-Design and customize responsive mobile-first sites*

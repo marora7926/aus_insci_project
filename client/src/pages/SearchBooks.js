@@ -6,20 +6,19 @@ import { useMutation } from '@apollo/client';
 import { ADD_BOOK } from '../utils/mutations';
 
 const styles = {
-  h1: {
-    // fontWeight: 100,
-    color: 'white',
+  h2: {
     textAlign: 'center',
-    paddingBottom: '10px',
+    padding: '10px',
     borderBottom: '1px solid rgb(79, 98, 148)',
   },
-
+  h4: {
+    padding: '10px',
+  },
   button: {
     display: 'block',
     appearance: 'none',
     margin: '40px 0px 20px',
     border: '1px solid #333',
-    // textTransform: 'uppercase',
     padding: '10px 20px',
     borderRadius: '4px',
   },
@@ -117,7 +116,12 @@ const SearchBooks = () => {
   return (
     <>
         <Container>
-          <h1 style={styles.h1} className='text-dark'>Search for publications</h1>
+          <h2 style={styles.h2} className='text-dark'>Search for publications</h2>
+          <h4 style={styles.h4}>
+          {searchedBooks.length
+            ? `Viewing ${searchedBooks.length} results:`
+            : 'Type a keyword in the search bar and press search'}
+          </h4>
           <Form onSubmit={handleFormSubmit}>
             <Form.Row>
               <Col xs={12} md={8}>
@@ -144,11 +148,6 @@ const SearchBooks = () => {
           </Form>
         </Container>
       <Container>
-        <h2>
-          {searchedBooks.length
-            ? `Viewing ${searchedBooks.length} results:`
-            : 'Search for an article to begin'}
-        </h2>
         <CardColumns>
           {searchedBooks.map((book) => {
             return (

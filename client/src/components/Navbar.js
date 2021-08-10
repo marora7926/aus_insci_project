@@ -40,6 +40,10 @@ const styles = {
     color: 'white',
     padding: '8px 10px 8px 8px',
   },
+  navLinkLogIn: {
+    color: 'yellow',
+    padding: '8px 10px 8px 8px',
+  },
 };
 
 const pageReference = {
@@ -108,14 +112,14 @@ const AppNavbar = () => {
                 <>
                   <Nav.Link 
                     as={Link} to='/saved' 
-                    style={styles.navLink}
+                    style={styles.navLinkLogIn}
                     className={(location.pathname === '/saved' || parentLink === '/saved') ? 'nav-link active' : 'none'}
                   >
                     Saved documents
                   </Nav.Link>
                   <Nav.Link 
                     as={Link} to='/htmldata' 
-                    style={styles.navLink}
+                    style={styles.navLinkLogIn}
                     className={(location.pathname === '/htmldata' || parentLink === '/htmldata') ? 'nav-link active' : 'none'}
                   >
                     Descripitve Analysis

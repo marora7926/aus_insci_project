@@ -8,6 +8,27 @@ import { useMutation, useQuery } from '@apollo/client';
 import { REMOVE_BOOK } from '../utils/mutations';
 import { QUERY_ME } from '../utils/queries';
 
+const styles = {
+  h2: {
+    textAlign: 'center',
+    padding: '10px',
+    borderBottom: '1px solid rgb(79, 98, 148)',
+  },
+  h4: {
+    padding: '10px',
+  },
+  button: {
+    display: 'block',
+    appearance: 'none',
+    margin: '40px 0px 20px',
+    border: '1px solid #333',
+    // textTransform: 'uppercase',
+    padding: '10px 20px',
+    borderRadius: '4px',
+  },
+}
+
+
 const SavedBooks = () => {
   const [userData, setUserData] = useState({});
 
@@ -55,14 +76,14 @@ const SavedBooks = () => {
   return (
     <>
       <Container>
-          <h1>Viewing saved books!</h1>
+          <h2 style={styles.h2}>Viewing saved articles!</h2>
       </Container>
       <Container>
-        <h2>
+        <h4 style={styles.h4}>
           {userData.savedBooks.length
             ? `Viewing ${userData.savedBooks.length} saved ${userData.savedBooks.length === 1 ? 'book' : 'books'}:`
-            : 'You have no saved books!'}
-        </h2>
+            : 'You have no saved article!'}
+        </h4>
         <CardColumns>
           {userData.savedBooks && userData.savedBooks.filter(book => book != null)
             .map((book) => {
@@ -74,7 +95,7 @@ const SavedBooks = () => {
                   <p className='small'>Authors: {book.authors}</p>
                   <Card.Text>{book.description}</Card.Text>
                   <Button className='btn-block btn-danger' onClick={() => handleDeleteBook(book.bookId)}>
-                    Delete this Book!
+                    Delete this article!
                   </Button>
                 </Card.Body>
               </Card>

@@ -52,8 +52,22 @@ const Publications = () => {
                     m_title: "Health conditions after spinal cord injury",
                     title: "Health conditions after SCI",
                     authors: "Mohit Arora",
-                    citation: "Arora M, Harvey LA, Lavrencic L, Bowden JL, Nier L, Glinsky JV, Hayes AJ, Cameron ID. A telephone-based version of the spinal cord injury-secondary conditions scale: a reliability and validity study. Spinal Cord. 2016 May;54(5):402-5. doi: 10.1038/sc.2015.119. Epub 2015 Jul 21. PMID: 26193815.",
-                    link: "https://pubmed.ncbi.nlm.nih.gov/26193815/",
+                    citation: "Place holder",
+                    link: "https://pubmed.ncbi.nlm.nih.gov/",
+                },{
+                    id: 3,
+                    m_title: "Activity and participation after spinal cord injury",
+                    title: "Activity, participation and SCI",
+                    authors: "Mohit Arora",
+                    citation: "Place holder",
+                    link: "https://pubmed.ncbi.nlm.nih.gov/",
+                },{
+                    id: 4,
+                    m_title: "Physical activity after spinal cord injury",
+                    title: "Physical activity after SCI",
+                    authors: "Mohit Arora",
+                    citation: "Place holder",
+                    link: "https://pubmed.ncbi.nlm.nih.gov/",
                 }].map((article, index) => {
                     return (
                         <>

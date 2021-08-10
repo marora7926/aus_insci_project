@@ -30,7 +30,7 @@
 
 ## <span style="color:lightgreen">Description of the application</span>
 ```
-Creating a simple, polished, responsive and interactive application that allows a Consumer with Spinal Cord Injury to access important findings of the Aus-InSCI Community Survey
+A simple, polished, responsive and interactive application that allows consumers with spinal cord injury to access information and results of the Aus-InSCI community survey.
 ```
 
 ## <span style="color:lightgreen">Access deployed and repo link</span>
@@ -41,7 +41,7 @@ Creating a simple, polished, responsive and interactive application that allows 
 Developed by [Mohit Arora](https://github.com/marora7926)
 
 ## <span style="color:lightgreen">Presentation link</span>
-[👋 Aus-InSCI Project Presentation 👋](https://cloudstor.aarnet.edu.au/plus/s/xxx)
+[👋 Aus-InSCI Project Presentation 👋](https://cloudstor.aarnet.edu.au/plus/s/iRYaw3oRDWDUBci)
 
 ## <span style="color:lightgreen">Table of contents</span>
 
@@ -61,8 +61,8 @@ Developed by [Mohit Arora](https://github.com/marora7926)
 
 ## <span style="color:lightgreen">User story</span>
 ``` 
-AS A Australian Consumer with Spinal Cord Injury or other Stakeholder, 
-I WANT TO access important findings of the Aus-InSCI Community Survey that was undertaken in 2018 in Australia as well as ABLE to access all related information and published resources.  
+AS AN Australian consumer with spinal cord injury or a stakeholder, 
+I WANT TO access important results of the Aus-InSCI Community Survey that was undertaken in 2018 as well as ABLE to access all related information and published resources.  
 ```
 
 ## <span style="color:lightgreen">Acceptance criteria</span>
@@ -190,15 +190,12 @@ THEN I am logged out of the site and land on the home page with Six NAVTABS
 
 
 ## <span style="color:lightgreen">Future developments</span>
-  1. Collect data from forms and save to mongoose atlas
-  2. Use inquirer to enter new data from back end.
-  3. Have a donate feature and implement a payment gateway for this. 
-  4. Global CSS styling.
-  5. Users inputs will be validated.
-  6. Allow user to search a password on the dashboard.
-  7. Finding a more secure way to encrypting the database.
-  8. Add a reveal icon to display the password.
-  9. URL click will direct to the website and auto-fill username and password.
+  1. Collect data from forms and save to mongoose DB atlas
+  2. Fetch data from Google Scholar or PubMed API in the search literature section. 
+  3. Use inquirer to enter new data from the back end (e.g., dynamically adding new published articles to the page).
+  4. Implement a gateway for processing payments in future (e.g., for fundraising)
+  5. Global CSS styling and branding.
+  6. Improve features and functionality by undertaking a consumer focus group discussion and understand their needs and build further insight. 
 
 ## <span style="color:lightgreen">Screenshot Landing page</span>
 ![Screenshot-landing-page](./client/src/assets/images/images/landing-page.png)

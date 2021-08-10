@@ -15,7 +15,7 @@ const styles = {
         width: 600,
     },
     h2: {
-        margin: '5px 20px',
+        margin: '15px 20px',
         color: 'purple',
     },
     h3: {
@@ -40,33 +40,32 @@ const styles = {
 const Translation = () => {
     return (
         <>
-            <Container style={styles.container}>
-            <Carousel variant="dark">
-                <Carousel.Item interval={2500}>
-                    <img 
-                    style={styles.img}
-                    src={ManOnWC}
-                    alt="First slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={2500}>
-                    <img
-                    style={styles.img}
-                    src={WCAndBicycle}
-                    alt="Second slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={2500}>
-                    <img
-                    style={styles.img}
-                    src={WCAndSky}
-                    alt="Third slide"
-                    />
-                </Carousel.Item>
-            </Carousel>
-            </Container>
             <h2 style={styles.h2}>What is the Aus-InSCI Translation Project?</h2>
-            {/* <img style={styles.img} alt="wc_sky"></img> */}
+            <Container style={styles.container}>
+                <Carousel variant="dark">
+                    <Carousel.Item interval={2500}>
+                        <img 
+                        style={styles.img}
+                        src={WCAndSky}
+                        alt="First slide"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item interval={2500}>
+                        <img
+                        style={styles.img}
+                        src={ManOnWC}
+                        alt="Second slide"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item interval={2500}>
+                        <img
+                        style={styles.img}
+                        src={WCAndBicycle}
+                        alt="Third slide"
+                        />
+                    </Carousel.Item>
+                </Carousel>
+            </Container>
             <div>
                 <h3 style={styles.h3}>What is the project Background?</h3>
                 <p style={styles.p}>

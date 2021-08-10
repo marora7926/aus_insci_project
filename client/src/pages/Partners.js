@@ -32,7 +32,7 @@ const Partners = () => {
                         <Navbar.Collapse id='navbar'>
                             <Nav>
                                 <Nav.Link as={Link} to='/researchers' style={styles.navLink}>The Research Team</Nav.Link>
-                                <Nav.Link as={Link} to='/advisory' style={styles.navLink}>Advisory Committees</Nav.Link>
+                                <Nav.Link as={Link} to='/advisory' style={styles.navLink}>Project Committees</Nav.Link>
                                 <Nav.Link as={Link} to='/organisations' style={styles.navLink}>Partner Organisations</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>

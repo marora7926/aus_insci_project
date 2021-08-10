@@ -15,7 +15,7 @@ const styles = {
         width: 600,
     },
     h2: {
-        margin: '5px 20px',
+        margin: '15px 20px',
         color: 'purple',
     },
     h3: {
@@ -31,39 +31,39 @@ const styles = {
 const AusInsci2018 = () => {
     return (
         <>
-            <Container style={styles.container}>
-            <Carousel variant="dark">
-                <Carousel.Item interval={2500}>
-                    <img 
-                    style={styles.img}
-                    // className="d-block w-100"
-                    src={ManOnWC}
-                    alt="First slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={2500}>
-                    <img
-                    style={styles.img}
-                    // className="d-block w-100"
-                    src={WCAndBicycle}
-                    alt="Second slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={2500}>
-                    <img
-                    style={styles.img}
-                    // className="d-block w-100"
-                    src={WCAndSky}
-                    alt="Third slide"
-                    />
-                    {/* <Carousel.Caption>
-                    <h5>Third slide label</h5>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </Carousel.Caption> */}
-                </Carousel.Item>
-            </Carousel>
-            </Container>
             <h2 style={styles.h2}>What is the Aus-InSCI 2018 Community Survey?</h2>
+            <Container style={styles.container}>
+                <Carousel variant="dark">
+                    <Carousel.Item interval={2500}>
+                        <img 
+                        style={styles.img}
+                        // className="d-block w-100"
+                        src={ManOnWC}
+                        alt="First slide"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item interval={2500}>
+                        <img
+                        style={styles.img}
+                        // className="d-block w-100"
+                        src={WCAndBicycle}
+                        alt="Second slide"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item interval={2500}>
+                        <img
+                        style={styles.img}
+                        // className="d-block w-100"
+                        src={WCAndSky}
+                        alt="Third slide"
+                        />
+                        {/* <Carousel.Caption>
+                        <h5>Third slide label</h5>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        </Carousel.Caption> */}
+                    </Carousel.Item>
+                </Carousel>
+            </Container>
             <div>
                 <h3 style={styles.h3}>What is the project background?</h3>
                 <p style={styles.p}>

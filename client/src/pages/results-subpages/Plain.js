@@ -58,10 +58,28 @@ const Plain = () => {
                     version: 1.0,
                     date: "10-07-21",
                     download: "2a_results",
+                },{
+                    id: 3,
+                    m_title: "Associated Health Conditions after spinal cord injury",
+                    title: "Health Conditions after SCI",
+                    authors: ["Mohit Arora"],
+                    link: "../assets/documents/Results_2018.pdf",
+                    version: 1.0,
+                    date: "10-07-21",
+                    download: "3a_results",
+                },{
+                    id: 4,
+                    m_title: "Activity Burden after spinal cord injury",
+                    title: "Activity after SCI",
+                    authors: ["Mohit Arora"],
+                    link: "../assets/documents/Results_2018.pdf",
+                    version: 1.0,
+                    date: "10-07-21",
+                    download: "4a_results",
                 }].map((article, index) => {
                     return (
                         <>
-                            <h4 style={styles.h4}>{article.id}. {article.m_title} <i>(Lead author: {article.authors} et al)</i></h4>
+                            <h4 style={styles.h4}>{article.id}. {article.m_title} <i>(Authors: {article.authors} et al)</i></h4>
                             <Button style={styles.button} variant="primary" onClick={() => {handleShowObject('show' + index)}}>
                                 Access pdf here
                             </Button>
